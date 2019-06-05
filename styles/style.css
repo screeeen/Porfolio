@@ -1,0 +1,42 @@
+
+
+#container {
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  width: 40%;
+  height: 300px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: beige;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+}
+
+h1 {
+  color: blue;
+  width: 50%;
+  height: 10%;
+}
+
+.right {
+  background-color: lightblue;
+  padding: 2%;
+  width: 50%;
+}
+
+.left {
+  background-color: lightcoral;
+  padding: 2%;
+  width: 50%;
+
+}
+
+.text {
+  background-color: lightslategray;
+  padding: 2%;
+}
