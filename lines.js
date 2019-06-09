@@ -9,14 +9,16 @@ function myLoop () {           //  create a loop function
    setTimeout(function () {    //  call a 3s setTimeout when the loop is called
     let line = document.createElement("div");
     line.className = "line";
-    line.style.top = index + "px";
     line.style.height = "2px";
-    line.style.background = "black";
+    // line.style.top = "4" + index + "px";
+    line.style.background = "#00000055";
     // line.style.animationDelay = "." + index + "s";
     // line.style.animationDuration = index + "s";
-    document.getElementById("container").appendChild(line);        //  your code here
-    index+=6;                     //  increment the counter
-      if (index < h) {            //  if the counter < 10, call the loop function
+    let elementHeight = document.getElementById("game").offsetHeight;
+  
+    document.getElementById("game").appendChild(line);        //  your code here
+    index+=2;                     //  increment the counter
+      if (index < elementHeight) {            //  if the counter < 10, call the loop function
          myLoop();             //  ..  again which will trigger another 
       }                        //  ..  setTimeout()
    }, 10)
