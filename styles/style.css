@@ -92,7 +92,7 @@ a:hover {
   .block {
     overflow: visible;
     padding: 2%;
-    font-size: 2em;
+    font-size: 4em;
     line-height: 1.4em;
   }
   .block img {
