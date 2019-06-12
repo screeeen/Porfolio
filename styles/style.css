@@ -8,7 +8,7 @@ h1 {
   width: 50%;
   height: 10%;
   text-align: left;
-  font-size: 20vw;
+  font-size: 20em;
   width: 8vw;
 }
 
@@ -16,7 +16,7 @@ h1 {
   width: 100%;
   text-align: left;
   margin: 0 4vw;
-  font-size: 4vw;
+  font-size: 4em;
   font-weight: 900;
   display: block;
 }
@@ -28,7 +28,7 @@ h1 {
 
 a {
   color: black;
-  font-size: 1.3vw;
+  font-size: 1.3em;
   opacity: 1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -92,7 +92,7 @@ a:hover {
   .block {
     overflow: visible;
     padding: 2%;
-    font-size: 2vw;
+    font-size: 2em;
     line-height: 1.4em;
   }
   .block img {
@@ -148,7 +148,7 @@ a:hover {
     width: 50%;
     overflow: visible;
     padding: 2%;
-    font-size: 1.3vw;
+    font-size: 1.3em;
     line-height: 1.4em;
   }
   .block img {
@@ -172,18 +172,18 @@ a:hover {
 
 .bloq {
   width: 10%;
-  font-size: 1.3vw;
+  font-size: 1.3em;
 }
 
 .bloq:nth-child(1) {
   margin-left: 10px;
-  font-size: 1.3vw;
+  font-size: 1.3em;
 }
 
 .bloq:nth-child(3) {
   width: 10%;
   text-align: right;
-  font-size: 1.3vw;
+  font-size: 1.3em;
   font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
