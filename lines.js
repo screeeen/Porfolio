@@ -11,9 +11,9 @@ function myLoop() {
     line.style.height = "2px";
     line.style.background = "#00000055";
 
-    let elementHeight = document.getElementById("content").offsetHeight;
-
-    document.getElementById("content").appendChild(line);
+    let elementHeight = document.getElementById("all").offsetHeight;
+    console.log(elementHeight);
+    document.getElementById("all").appendChild(line);
     index += 2;
     if (index < elementHeight) {
       myLoop();
