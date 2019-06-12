@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap');
-@font-face {
-  font-family: 'Computer';
-  src: url('./../Px437_PhoenixEGA_8x8-2y.ttf');
-}
+// @font-face {
+//   font-family: 'Computer';
+//   src: url('./../Px437_PhoenixEGA_8x8-2y.ttf');
+// }
 
 $text-color: black;
 $fontSize_1: 20em;
@@ -10,6 +10,12 @@ $fontSize_2: 4em;
 $fontSize_3: 2em;
 $fontSize_4: 1.3em;
 $fontSize_5: 0.6em;
+
+$fontSize_1: 20vw;
+$fontSize_2: 4vw;
+$fontSize_3: 2vw;
+$fontSize_4: 1.3vw;
+$fontSize_5: 0.3vw;
 
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 320px;
@@ -43,9 +49,8 @@ $breakpoint-desktop: 768px;
   // border: 1px solid black;
 }
 
-
 body{
-  font-family: 'Computer';
+  font-family: 'Cabin';
 }
 h1 {
   color: $text-color;
