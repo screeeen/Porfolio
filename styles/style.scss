@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap');
+@font-face {
+  font-family: 'Computer';
+  src: url('./../Px437_PhoenixEGA_8x8-2y.ttf');
+}
+
+$text-color: black;
+$fontSize_1: 20em;
+$fontSize_2: 4em;
+$fontSize_3: 2em;
+$fontSize_4: 1.3em;
+$fontSize_5: 0.6em;
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 320px;
+$breakpoint-desktop: 768px;
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2vh auto 1vh auto;
+}
+
+@mixin textNormal {
+  font-size: $fontSize_3;
+  line-height: 1.4em;
+}
+
+@mixin textSmall {
+  font-size: $fontSize_4;
+  line-height: 1.4em;
+}
+
+@mixin marginLeft{
+  width: 8vw;
+  // border: 1px solid black;
+}
+
+
+body{
+  font-family: 'Computer';
+}
+h1 {
+  color: $text-color;
+  width: 50%;
+  height: 10%;
+  text-align: left;
+  font-size: $fontSize_1;
+  @include marginLeft();
+}
+
+.titulo {
+  width: 100%;
+  text-align: left;
+  margin: 0 4vw;
+  font-size: $fontSize_2;
+  font-weight: 900;
+  display: block;
+}
+
+.text-3d {
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 30px 60px rgba(1, 1, 1, 0.1);
+}
+
+a {
+  color: $text-color;
+  font-size: $fontSize_4;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: $text-color;
+  opacity: 1;
+}
+
+.menu-bar {
+  height: 0.001vh;
+  width: 0.001vw;
+  border: 6px solid $text-color;
+}
+
+
+@media (min-width: $breakpoint-mobile) {
+  
+  .menu {
+    @include flexRow();
+  }
+
+  .caja-inner {
+    width: 96%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    @include flexColumn();
+  }
+
+  .caja-inner-bottom {
+    width: 96%;
+    margin: 2vh auto 0 auto;
+    @include flexColumn();
+  }
+
+  .block {
+    overflow: visible;
+    padding: 2%;
+    @include textNormal();
+  }
+
+  .block img {
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+
+  .menu {
+    @include flexColumn();
+    @include marginLeft();
+  }
+  .caja-inner {
+    width: 96%;
+    height: 100%;
+    @include flexRow();
+    margin: 0 auto 0 auto;
+  }
+
+  .caja-inner-bottom {
+    width: 96%;
+    margin: 2vh auto 4vh auto;
+    @include flexRow();
+
+  }
+
+  .block {
+    width: 50%;
+    overflow: visible;
+    padding: 2%;
+    @include textSmall();
+  }
+
+  .block img {
+    width: 100%;
+  }
+
+}
+
+.pies {
+  width: 70%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bloq {
+  width: 10%;
+  font-size: $fontSize_4;
+}
+
+.bloq:nth-child(1) {
+  margin-left: 10px;
+  font-size: $fontSize_4;
+}
+
+.bloq:nth-child(3) {
+  width: 10%;
+  text-align: right;
+  font-size: $fontSize_4;
+  font-weight: 300;
+}
