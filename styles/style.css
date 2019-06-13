@@ -4,19 +4,20 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #555;
   width: 50%;
   height: 10%;
+  padding: 2%;
   text-align: left;
   font-size: 20em;
-  width: 8vw;
+  width: 24vw;
 }
 
 .titulo {
   width: 100%;
   text-align: left;
   margin: 0 4vw;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 900;
   display: block;
 }
@@ -27,22 +28,17 @@ h1 {
 }
 
 a {
-  color: black;
-  font-size: 1.3em;
+  color: #555;
+  font-size: 1em;
   opacity: 1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 a:hover {
-  color: black;
+  color: #555;
   opacity: 1;
-}
-
-.menu-bar {
-  height: 0.001vh;
-  width: 0.001vw;
-  border: 6px solid black;
 }
 
 @media (min-width: 320px) {
@@ -92,8 +88,9 @@ a:hover {
   .block {
     overflow: visible;
     padding: 2%;
-    font-size: 4em;
+    font-size: 1em;
     line-height: 1.4em;
+    color: #555;
   }
   .block img {
     width: 100%;
@@ -113,7 +110,7 @@ a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 2vh auto 1vh auto;
-    width: 8vw;
+    width: 24vw;
   }
   .caja-inner {
     width: 96%;
@@ -148,8 +145,9 @@ a:hover {
     width: 50%;
     overflow: visible;
     padding: 2%;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.4em;
+    color: #555;
   }
   .block img {
     width: 100%;
@@ -172,18 +170,18 @@ a:hover {
 
 .bloq {
   width: 10%;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .bloq:nth-child(1) {
   margin-left: 10px;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .bloq:nth-child(3) {
   width: 10%;
   text-align: right;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,12 @@
 //   src: url('./../Px437_PhoenixEGA_8x8-2y.ttf');
 // }
 
-$text-color: black;
+$text-color: #555;
+
 $fontSize_1: 20em;
-$fontSize_2: 4em;
-$fontSize_3: 4em;
-$fontSize_4: 1.3em;
+$fontSize_2: 2em;
+$fontSize_3: 1em;
+$fontSize_4: 1em;
 $fontSize_5: 0.6em;
 
 // $fontSize_1: 20vw;
@@ -45,7 +46,7 @@ $breakpoint-desktop: 768px;
 }
 
 @mixin marginLeft{
-  width: 8vw;
+  width: 24vw;
   // border: 1px solid black;
 }
 
@@ -56,6 +57,7 @@ h1 {
   color: $text-color;
   width: 50%;
   height: 10%;
+  padding: 2%;
   text-align: left;
   font-size: $fontSize_1;
   @include marginLeft();
@@ -81,19 +83,13 @@ a {
   font-size: $fontSize_4;
   opacity: 1;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 a:hover {
   color: $text-color;
   opacity: 1;
 }
-
-.menu-bar {
-  height: 0.001vh;
-  width: 0.001vw;
-  border: 6px solid $text-color;
-}
-
 
 @media (min-width: $breakpoint-mobile) {
   
@@ -118,6 +114,8 @@ a:hover {
     overflow: visible;
     padding: 2%;
     @include textNormal();
+    color: $text-color;
+
   }
 
   .block img {
@@ -150,11 +148,14 @@ a:hover {
     overflow: visible;
     padding: 2%;
     @include textSmall();
+    color: $text-color;
   }
 
   .block img {
     width: 100%;
   }
+
+
 
 }
 
