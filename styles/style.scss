@@ -10,16 +10,11 @@ $fontSize_1: 20em;
 $fontSize_2: 2em;
 $fontSize_3: 1em;
 $fontSize_4: 1em;
-$fontSize_5: 0.6em;
+$fontSize_5: 0.6vw;
 
-// $fontSize_1: 20vw;
-// $fontSize_2: 4vw;
-// $fontSize_3: 2vw;
-// $fontSize_4: 1.3vw;
-// $fontSize_5: 0.3vw;
 
-$breakpoint-tablet: 768px;
 $breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
 $breakpoint-desktop: 768px;
 
 @mixin flexRow {
@@ -78,23 +73,27 @@ h1 {
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 30px 60px rgba(1, 1, 1, 0.1);
 }
 
-a {
-  color: $text-color;
-  font-size: $fontSize_4;
-  opacity: 1;
-  transition: 0.4s;
-  text-decoration: none;
-}
 
 a:hover {
   color: $text-color;
-  opacity: 1;
 }
 
+.menu-text{
+  line-height: .1em;
+}
+
+
+// MOBILE
 @media (min-width: $breakpoint-mobile) {
   
   .menu {
     @include flexRow();
+  }
+  a {
+    // font-size: $fontSize_4;
+    text-decoration: none;
+    line-height: 1.5em;
+    margin: 2% 2%;
   }
 
   .caja-inner {
@@ -123,12 +122,21 @@ a:hover {
   }
 }
 
+//DESKTOP
 @media (min-width: $breakpoint-desktop) {
 
   .menu {
     @include flexColumn();
     @include marginLeft();
   }
+  
+  a {
+    // font-size: $fontSize_5;
+    text-decoration: none;
+    line-height: 4vh;
+    margin: 2% 2%;
+  }
+
   .caja-inner {
     width: 96%;
     height: 100%;

@@ -27,18 +27,12 @@ h1 {
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 30px 60px rgba(1, 1, 1, 0.1);
 }
 
-a {
-  color: #555;
-  font-size: 1em;
-  opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  text-decoration: none;
-}
-
 a:hover {
   color: #555;
-  opacity: 1;
+}
+
+.menu-text {
+  line-height: .1em;
 }
 
 @media (min-width: 320px) {
@@ -53,6 +47,11 @@ a:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  a {
+    text-decoration: none;
+    line-height: 1.5em;
+    margin: 2% 2%;
   }
   .caja-inner {
     width: 96%;
@@ -111,6 +110,11 @@ a:hover {
             justify-content: flex-start;
     margin: 2vh auto 1vh auto;
     width: 24vw;
+  }
+  a {
+    text-decoration: none;
+    line-height: 4vh;
+    margin: 2% 2%;
   }
   .caja-inner {
     width: 96%;
