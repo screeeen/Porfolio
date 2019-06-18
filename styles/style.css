@@ -1,16 +1,32 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,70ˇ0i&display=swap");
 body {
   font-family: 'Cabin';
+}
+
+body {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 h1 {
   color: #555;
   width: 50%;
   height: 10%;
-  padding: 2%;
+  padding: 2% 0;
   text-align: left;
   font-size: 20em;
-  width: 24vw;
 }
 
 .titulo {
