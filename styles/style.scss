@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,70ˇ0i&display=swap');
-
-
+// @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,70ˇ0i&display=swap');
+@font-face {
+  font-family: Sofia;
+  src: url('/Users/miguelangelalvarez/portfolio/sofiapro-light.otf');
+}
 
 $min_width: 320px;
 $max_width: 1200px;
@@ -73,7 +75,7 @@ $breakpoint-desktop: 768px;
 }
 
 body{
-  font-family: 'Cabin';
+  font-family: 'Sofia';
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
 }
