@@ -15,8 +15,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
                        window.addEventListener('scroll', function (e) {
   
-  progressAmount = Math.round(window.scrollY*100 / document.body.scrollHeight);
-  console.log("hola",window.scrollY , document.body.scrollHeight, progressAmount);
+  progressAmount = Math.round((window.scrollY)*100 / (document.documentElement.scrollHeight- window.innerHeight));
+  console.log("hola",(window.scrollY + window.innerHeight) , document.documentElement.scrollHeight
+  , progressAmount);
   bar.setAttribute("Style", "width:" + progressAmount + "%");
 
   document.getElementsByClassName("progress-bar")[0].setAttribute("aria-valuenow", progressAmount);
