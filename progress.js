@@ -7,23 +7,25 @@ bar.setAttribute("aria-valuemax", "window.innerHeight");
 bar.setAttribute("aria-valuenow", "window.innerHeight");
 let progressAmount;
 
-var body = document.body,
-    html = document.documentElement;
+var body = document.body, html = document.documentElement;
+var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+// var menu = document.getElementsByClassName("menu")[0];
+// var sticky = menu.offsetTop - (menu.offsetHeight);
 
-                       window.addEventListener('scroll', function (e) {
-  
-  progressAmount = Math.round((window.scrollY)*100 / (document.documentElement.scrollHeight- window.innerHeight));
-  console.log("hola",(window.scrollY + window.innerHeight) , document.documentElement.scrollHeight
-  , progressAmount);
+window.addEventListener('scroll', function (e) {
+  progressAmount = Math.round((window.scrollY) * 100 / (document.documentElement.scrollHeight - window.innerHeight));
   bar.setAttribute("Style", "width:" + progressAmount + "%");
-
   document.getElementsByClassName("progress-bar")[0].setAttribute("aria-valuenow", progressAmount);
+  
+  // if (window.pageYOffset >= sticky) {
+  //   console.log(window.pageYOffset, sticky);
+    
+  //   menu.classList.add("sticky-top")
+  // } else {
+  //   menu.classList.remove("sticky-top");
+  // }
 }
 );
-
-
 
 
