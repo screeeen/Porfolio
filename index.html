@@ -17,11 +17,11 @@
   <div class="row border">
     <div class="sticky-top col-md-3 ">
       <div id="menu-options" class="menu list-group list-group-flush">
-        <a href="#interaction-design" class="list-group-item list-group-item-action active">INTERACTION DESIGN</a>
-        <a href="#game-design" class="list-group-item list-group-item-action">GAME DESIGN</a>
-        <a href="#virtual-reality" class="list-group-item list-group-item-action">VIRTUAL REALITY</a>
-        <a href="#animation" class="list-group-item list-group-item-action">ANIMATION</a>
-        <a href="#about" class="list-group-item list-group-item-action disabled">ABOUT</a>
+        <a href="#interaction-design" id ="menu-interaction"class="list-group-item list-group-item-action active">INTERACTION DESIGN</a>
+        <a href="#game-design" id ="menu-game" class="list-group-item list-group-item-action">GAME DESIGN</a>
+        <a href="#virtual-reality" id ="menu-virtual" class="list-group-item list-group-item-action">VIRTUAL REALITY</a>
+        <a href="#animation" id ="menu-animation" class="list-group-item list-group-item-action">ANIMATION</a>
+        <!-- <a href="#about" id ="menu-interaction" class="list-group-item list-group-item-action disabled">ABOUT</a> -->
       </div>
 
       <div class="progress blue sticky-top mt-6" style="height: 6px;z-index:2000">
@@ -76,6 +76,7 @@
       <img src="./images/graphics_images/Hello_Anim.gif" class="img-fluid" alt="">
     </div>
     <script type="text/javascript" src="./progress.js"></script>
+    <script type="text/javascript" src="./menu.js"></script>
     <div class="col-md-3 border">
       <p class="pt-4 pl-5 pb-5">
         Hello, I'm Miguel
@@ -91,6 +92,7 @@
     <div class="col-md-3">
       <img src="./images/Miguel_Alva_small.jpg" class="img-fluid pt-4 pl-5 pb-5" alt="">
     </div>
+
     <div class="row ">
       <div class="col-md-3">
       </div>
@@ -118,102 +120,100 @@
       <div class="col-md-2 blue">
       </div>
     </div>
-    <div class="row m-4">
-      <div class="row ">
+
+    <div data-spy="scroll" data-target="#menu-options" data-offset="0" class="scrollspy-example">
+
+      <div class="row m-4">
         <div class="col-md-3">
-
         </div>
-        <div data-spy="scroll" data-target="#menu-options" data-offset="0" class="scrollspy-example">
+        <div id="interaction-design" class="col-md-4">
+          <h3>interaction design</h3>
+          <p class="m-4">
+            my work as interface designer
+            tackle operational gaps bwtween tech and human
+            explore ways to convey business and user non friction
+            elminate friction between user and service
+            apply user centered techniques
+            keep it simple
+            got experience on player psichology and games user interfaces
+            storytelling
+            tools: balsamiq, adobe xd typeform, html , css, unity, ab testing?
+            techniques: user centered, research, speciality in low fi wireframes, prototyping, lean dev
+          </p>
+          <img src="./images/interaction_images/01_3Round games.png" class="img-fluid m-4" alt="">
+        </div>
+        <div class="col-md-5">
+          <img src="./images/interaction_images/00_Belmona_flow_2_sec_ISO_Detalle.png" class="img-fluid m-4" alt="">
+          <img src="./images/interaction_images/00_Belmona_flow_4_sec_Portrait_mode.png" class="img-fluid m-4" alt="">
+          <img src="./images/interaction_images/02_Salon_flow_2.png" class="img-fluid m-4" alt="">
+        </div>
 
-          <div id="interaction-design" class="col-md-4">
-            <h3>interaction design</h3>
+        <div class="row m-4">
+          <div class="col-md-3">
+          </div>
+        </div>
+
+        <div id="game-design" class="row m-4 border">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+            <h3>game design</h3>
             <p class="m-4">
-              my work as interface designer
-              tackle operational gaps bwtween tech and human
-              explore ways to convey business and user non friction
-              elminate friction between user and service
-              apply user centered techniques
-              keep it simple
-              got experience on player psichology and games user interfaces
-              storytelling
-              tools: balsamiq, adobe xd typeform, html , css, unity, ab testing?
-              techniques: user centered, research, speciality in low fi wireframes, prototyping, lean dev
+              My profile as a game designer is very close to the interaction design role speciality in storytelling,
+              gameplay
+              mechanincs, analysis and conversion worked on AAA titles, cross-platform social products. I have
+              experience
+              designing and leading productions released my own mobile games, with several festival selections.
             </p>
-            <img src="./images/interaction_images/01_3Round games.png" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/casino isometric.jpg" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/screenshot_001_modifications copy.jpg" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/2016-03-05 12.39.34.png" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/2016-03-05 12.31.10.png" class="img-fluid m-4" alt="">
           </div>
-          <div class="col-md-5">
-            <img src="./images/interaction_images/00_Belmona_flow_2_sec_ISO_Detalle.png" class="img-fluid m-4" alt="">
-            <img src="./images/interaction_images/00_Belmona_flow_4_sec_Portrait_mode.png" class="img-fluid m-4" alt="">
-            <img src="./images/interaction_images/02_Salon_flow_2.png" class="img-fluid m-4" alt="">
+          <div class="col m-9">
+            <img src="./images/games_images/map2 copy.jpg" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/posters_Downhill_Detail.png" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/SerieB_1.png" class="img-fluid m-4" alt="">
+            <img src="./images/games_images/SerieB_2.png" class="img-fluid m-4" alt="">
           </div>
+        </div>
 
-          <div class="row m-4">
-            <div class="col-md-3">
-            </div>
-          </div>
-
-          <div id="game-design" class="row m-4 border">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-3">
-              <h3>game design</h3>
-              <p class="m-4">
-                My profile as a game designer is very close to the interaction design role speciality in storytelling,
-                gameplay
-                mechanincs, analysis and conversion worked on AAA titles, cross-platform social products. I have
-                experience
-                designing and leading productions released my own mobile games, with several festival selections.
-              </p>
-              <img src="./images/games_images/casino isometric.jpg" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/screenshot_001_modifications copy.jpg" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/2016-03-05 12.39.34.png" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/2016-03-05 12.31.10.png" class="img-fluid m-4" alt="">
-            </div>
-            <div class="col m-9">
-              <img src="./images/games_images/map2 copy.jpg" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/posters_Downhill_Detail.png" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/SerieB_1.png" class="img-fluid m-4" alt="">
-              <img src="./images/games_images/SerieB_2.png" class="img-fluid m-4" alt="">
-            </div>
-          </div>
-
-          <div id="virtual-reality" class="row m-4 border">
-            <div class="col-md-3 border">
-            </div>
-            <div class="col-md-3 border">
-              <h3>Virtual Reality</h3>
-              <p class="m-4">
-                Use case study adaption of interfaces to use case set up of platform operability
-              </p>
-              <img src="./images/graphics_images/000_Passenger_Leaflet.png" class="img-fluid m-4" alt="">
-              <img src="./images/graphics_images/000_ manual_proto.png" class="img-fluid m-4" alt="">
-            </div>
-            <div class="col m-9">
-              <img src="./images/VR_images/IFVR_Proto.png" class="img-fluid m-4" alt="">
-              <img src="./images/VR_images/IFVR_UI.png" class="img-fluid m-4" alt="">
-            </div>
-          </div>
-
-          <div id="animation" class="row m-4 border">
-            <div class="col-md-3 border">
-            </div>
-            <div class="col-md-9 border">
-
-              <h6 class="col m-4 border">ANIMATION</h6>
-              <!-- <div class="col-md-3 border">
-          </div> -->
-              <img src="./images/graphics_images/poster_roland.png" class="img-fluid col-md-2" alt="">
-              <img src="./images/graphics_images/splash _2732_2048.png" class="img-fluid col-md-2" alt="">
-            </div>
-          </div>
-
-          <!-- style="margin-left:5vw; transform:rotateZ(-5deg)" -->
+        <div id="virtual-reality" class="row m-4 border">
           <div class="col-md-3 border">
           </div>
-
-          <div class="row-md-3 border counter-blue">
-            <h6 class="p-3 mr-1">GET IN TOUCH</h6>
+          <div class="col-md-3 border">
+            <h3>Virtual Reality</h3>
+            <p class="m-4">
+              Use case study adaption of interfaces to use case set up of platform operability
+            </p>
+            <img src="./images/graphics_images/000_Passenger_Leaflet.png" class="img-fluid m-4" alt="">
+            <img src="./images/graphics_images/000_ manual_proto.png" class="img-fluid m-4" alt="">
           </div>
+          <div class="col m-9">
+            <img src="./images/VR_images/IFVR_Proto.png" class="img-fluid m-4" alt="">
+            <img src="./images/VR_images/IFVR_UI.png" class="img-fluid m-4" alt="">
+          </div>
+        </div>
+
+        <div id="animation" class="row m-4 border">
+          <div class="col-md-3 border">
+          </div>
+          <div class="col-md-9 border">
+
+            <h6 class="col m-4 border">ANIMATION</h6>
+            <!-- <div class="col-md-3 border">
+          </div> -->
+            <img src="./images/graphics_images/poster_roland.png" class="img-fluid col-md-2" alt="">
+            <img src="./images/graphics_images/splash _2732_2048.png" class="img-fluid col-md-2" alt="">
+          </div>
+        </div>
+
+        <!-- style="margin-left:5vw; transform:rotateZ(-5deg)" -->
+        <div class="col-md-3 border">
+        </div>
+
+        <div class="row-md-3 border counter-blue">
+          <h6 class="p-3 mr-1">GET IN TOUCH</h6>
         </div>
       </div>
     </div>
