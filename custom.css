@@ -20,4 +20,19 @@
   margin: 18px 0;
 }
 
+.form-control{
+font-size: 12px;
+font-weight: bolder;  
+color: white;
+height: 2%;
+background-color: #001a4f;
+margin: 8%;
+border: 2px solid white;
+}
+
+label {
+  font-size: 12px;
+}
+
+
  
