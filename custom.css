@@ -22,7 +22,7 @@
 
 .form-control{
 font-size: 12px;
-font-weight: bolder;  
+/* font-weight: bold;   */
 color: white;
 height: 2%;
 background-color: #001a4f;
@@ -34,5 +34,21 @@ label {
   font-size: 12px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  background-color: #001a4f;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+  background-color: #001a4f;
+
+}
 
  

@@ -1,9 +1,9 @@
 var menuOptions = document.getElementById("menu-options");
-var interaction = document.getElementById("menu-interaction");
-var game = document.getElementById("menu-game");
-var virtual = document.getElementById("menu-virtual");
-var animation = document.getElementById("menu-animation");
-console.log(game);
+var interaction = document.getElementsByClassName("menu-interaction")[0];
+var game = document.getElementsByClassName("menu-game")[0];
+var virtual = document.getElementsByClassName("menu-virtual")[0];
+var animation = document.getElementsByClassName("menu-animation")[0];
+console.log(menuOptions);
 
 
 interaction.addEventListener("click",function(e){
