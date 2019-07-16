@@ -8,17 +8,7 @@
   color: white;
 }
 
-.hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
-  border-style: solid none;
-  border-width: 1px 0;
-  margin: 18px 0;
-}
+*:focus {outline: none;}
 
 .form-control{
 font-size: 12px;
@@ -34,6 +24,11 @@ label {
   font-size: 12px;
 }
 
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1; /* Firefox */
@@ -46,9 +41,47 @@ label {
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
+  color: white;
   background-color: #001a4f;
+}
 
+input[type=text]:focus, input[type=email]:focus,textarea:focus,select:focus{
+  background-color: #001a4f !important;
+  color: white !important;
+  border: none;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  width: 120%;
+  resize: none;
+}
+
+::-webkit-validation-bubble-message {
+  background-color: #001a4f !important;
+  color: white;
+}
+
+.scrollspy-example{
+  position: relative;
+}
+
+.progress{
+  border-radius: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+
+  .custom-collapse .collapse{
+              display:block;
+        }  
+  }
+
+.btn-group-sm>.btn, .btn-sm {
+    float: none;
+}
+.listgroup-toggle {
+    display: inline-block;
+    float: none;
+}
 }
 
  
