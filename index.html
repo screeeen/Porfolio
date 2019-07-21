@@ -38,10 +38,10 @@
 
       <div class="col m-8 p-2 pb-5 blue collapse">
         <div class="col-md-9">
-          <form action="https://t5s6zttfe0.execute-api.us-east-1.amazonaws.com/prod" method="POST">
+          <form id="serverless-contact-form" method="POST">
             <h3 class="p-2">Hello?</h3>
             <div class="rowml-1">
-                <input type="text" name="subject" id="name" class="form-control" placeholder="Name" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
                 <input type="text" name="company" id="company" class="form-control" placeholder="Company Name" required>
             <div class="form-group">
               <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
@@ -56,7 +56,7 @@
               </select>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+              <textarea class="form-control" name="message" id="message" rows="3"
                 placeholder="Write here your proposal"></textarea>
             </div>
             <button type="submit" class="btn btn-primary blue">Submit</button>
