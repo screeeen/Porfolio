@@ -38,17 +38,16 @@
 
       <div class="col m-8 p-2 pb-5 blue collapse">
         <div class="col-md-9">
-          <form action="https://cw1oexnutd.execute-api.us-east-1.amazonaws.com/contact" autocomplete="off" method="POST">
-            <input type="hidden" name="_next" value="www.screenimplosion.com" />
+          <form action="https://uvw03kx9uk.execute-api.us-east-1.amazonaws.com/mailing_stage" autocomplete="off" method="POST">
             <h3 class="p-2">Hello?</h3>
             <div class="rowml-1">
-                <input type="text" id="name" class="form-control" placeholder="Name" required>
-                <input type="text" id="company" class="form-control" placeholder="Company Name" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                <input type="text" name="company" id="company" class="form-control" placeholder="Company Name" required>
             <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
             </div>
             <div class="form-group">
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control" name="budget" id="exampleFormControlSelect1">
                 <option>Select Your Budget</option>
                 <option>Project is cool, but not much money</option>
                 <option>Some money involved, you will survive</option>
@@ -57,7 +56,7 @@
               </select>
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"
                 placeholder="Write here your proposal"></textarea>
             </div>
             <button type="submit" class="btn btn-primary blue">Submit</button>
