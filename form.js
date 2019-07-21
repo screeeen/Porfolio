@@ -1,5 +1,4 @@
 'use strict'
-console.log(document.getElementById('serverless-contact-form'), "hola");
 
 // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
 document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
@@ -16,9 +15,6 @@ function sendDataToLambda(e) {
   // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
   var endpoint = 'https://t5s6zttfe0.execute-api.us-east-1.amazonaws.com/prod/contactme'; 
   
-  console.log(document.getElementById('serverless-contact-form'));
-
-
   // document.getElementById('serverless-contact-form').reset();
 
   // Remember those form values we just grabbed? We're going to put them into an object here.
@@ -36,9 +32,13 @@ function sendDataToLambda(e) {
     mode: 'no-cors',
     body: JSON.stringify(body)
   });
+  console.log("hola");
+
   // Call the Fetch API to make our request
   fetch(lambdaRequest)
     // This is where you can handle errors. This is just an example, so we won't cover that.
     .then(response => console.log(response))
     .catch(err => console.log(err));
+
+    
 }
