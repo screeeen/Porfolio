@@ -2,7 +2,7 @@
 console.log(document.getElementById('serverless-contact-form'), "hola");
 
 // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
-document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda(e));
+document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
 
 // Now for the good stuff. This is the function that will send our data to AWS.
 function sendDataToLambda(e) {
