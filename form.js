@@ -42,6 +42,7 @@ function sendDataToLambda(e) {
 
   document.getElementById('serverless-contact-form').setAttribute("hidden",true);
   console.log(document.getElementById('serverless-contact-form'));
+  document.getElementById('form-container').classList.remove("blue");
   document.getElementById('thank-you').removeAttribute("hidden");
 
 
