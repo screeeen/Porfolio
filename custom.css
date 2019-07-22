@@ -8,44 +8,52 @@
   color: white;
 }
 
-*:focus {outline: none;}
+*:focus {
+  outline: none;
+}
 
-.form-control{
-font-size: 12px;
-/* font-weight: bold;   */
-color: white;
-height: 2%;
-background-color: #001a4f;
-margin: 8%;
-border: 2px solid white;
+.form-control {
+  font-size: 12px;
+  /* font-weight: bold;   */
+  color: white;
+  height: 2%;
+  background-color: #001a4f;
+  margin: 8%;
+  border: 2px solid white;
 }
 
 label {
   font-size: 12px;
 }
 
-::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1; /* Firefox */
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
-  background-color: #001a4f;
-
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: white;
   background-color: #001a4f;
 }
 
-input[type=text]:focus, input[type=email]:focus,textarea:focus,select:focus{
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+  background-color: #001a4f;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus,
+select:focus {
   background-color: #001a4f !important;
   color: white !important;
   border: none;
@@ -60,28 +68,47 @@ input[type=text]:focus, input[type=email]:focus,textarea:focus,select:focus{
   color: white;
 }
 
-.scrollspy-example{
+.scrollspy-example {
   position: relative;
 }
 
-.progress{
+.progress {
   border-radius: 0 !important;
 }
 
 @media screen and (min-width: 768px) {
-
-  .custom-collapse .collapse{
-              display:block;
-        }  
+  .custom-collapse .collapse {
+    display: block;
   }
+}
 
-.btn-group-sm>.btn, .btn-sm {
-    float: none;
+.btn-group-sm > .btn,
+.btn-sm {
+  float: none;
 }
 .listgroup-toggle {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 
+.clip-circle {
+  clip-path: circle(30% at center);
+}
 
- 
+.curtain {
+  box-sizing: border-box;
+  padding: 0;
+	margin: 0;
+  position: relative;  
+  width: 100%;
+  border: solid #5b6dcd 10px;
+/* 
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; */
+  background: #94979c;
+  z-index: 200;
+
+}
+
