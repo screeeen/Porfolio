@@ -1,8 +1,14 @@
 'use strict'
-console.log('hola');
+
+// document.getElementById
+// document.getElementById('budget')
+// document.querySelector('.thank-you')
+
 
 // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
 document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
+document.getElementsByClassName('back-to-form')[0].addEventListener('click',showForm);
+
 
 // Now for the good stuff. This is the function that will send our data to AWS.
 function sendDataToLambda(e) {
@@ -14,8 +20,8 @@ function sendDataToLambda(e) {
   var formBudget = document.querySelector('#budget').value;
   var formMessage = document.querySelector('#message').value;
   // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
-  var endpoint = 'https://t5s6zttfe0.execute-api.us-east-1.amazonaws.com/prod/contactme'; 
-  
+  var endpoint = 'https://t5s6zttfe0.execute-api.us-east-1.amazonaws.com/prod/contactme';
+
   // document.getElementById('serverless-contact-form').reset();
 
   // Remember those form values we just grabbed? We're going to put them into an object here.
@@ -40,10 +46,31 @@ function sendDataToLambda(e) {
     .then(response => console.log(response))
     .catch(err => console.log(err));
 
-  document.getElementById('serverless-contact-form').setAttribute("hidden",true);
-  console.log(document.getElementById('serverless-contact-form'));
-  document.getElementById('form-container').classList.remove("blue");
-  document.getElementById('thank-you').removeAttribute("hidden");
+      hideForm();
+      showFeedback();
+}
 
+async function hideForm() {
+  await document.getElementById('serverless-contact-form').classList.add("fade-out");
+  await document.getElementById('budget').setAttribute("disabled",true);
+  await document.getElementById('serverless-contact-form').setAttribute("disabled",true);
+}
+
+async function showFeedback(){
+  document.querySelector('.thank-you').removeAttribute("hidden");
+  document.querySelector('.thank-you').classList.add("fade-in");
+}
+
+async function showForm() {
+  document.getElementById('serverless-contact-form').classList.add("fade-in");
+  document.getElementById('serverless-contact-form').setAttribute("disabled",false);
 
 }
+
+async function hideFeedback() {
+  document.querySelector('.thank-you').classList.add("fade-out");
+  document.querySelector('.thank-you').setAttribute("hidden",true);
+  
+}
+
+

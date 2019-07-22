@@ -80,6 +80,8 @@ select:focus {
   .custom-collapse .collapse {
     display: block;
   }
+
+
 }
 
 .btn-group-sm > .btn,
@@ -95,20 +97,19 @@ select:focus {
   clip-path: circle(30% at center);
 }
 
-.curtain {
-  box-sizing: border-box;
-  padding: 0;
-	margin: 0;
-  position: relative;  
-  width: 100%;
-  border: solid #5b6dcd 10px;
-/* 
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; */
-  background: #94979c;
-  z-index: 200;
+.thank-you {
+  opacity:0;
+  position: absolute;
+}
 
+.fade-out {
+  transition:opacity 1s linear;
+  /* transition-delay: .5s; */
+  opacity:0;
+}
+.fade-in {
+  transition: opacity 1s linear;
+  transition-delay: 1.6s;
+  opacity:1;
 }
 
