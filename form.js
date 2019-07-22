@@ -15,7 +15,7 @@ function sendDataToLambda(e) {
   // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
   var endpoint = 'https://t5s6zttfe0.execute-api.us-east-1.amazonaws.com/prod/contactme'; 
   
-  // document.getElementById('serverless-contact-form').reset();
+  document.getElementById('serverless-contact-form').reset();
 
   // Remember those form values we just grabbed? We're going to put them into an object here.
   var body = {
@@ -32,7 +32,6 @@ function sendDataToLambda(e) {
     mode: 'no-cors',
     body: JSON.stringify(body)
   });
-  console.log("hola");
 
   // Call the Fetch API to make our request
   fetch(lambdaRequest)
