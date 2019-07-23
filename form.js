@@ -8,8 +8,8 @@ var backToForm = document.getElementsByClassName('back-to-form')[0]
 var menuAndForm = document.getElementById('utilityColumn');
 
 // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
-document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
-document.getElementsByClassName('back-to-form')[0].addEventListener('click',showForm);
+contactForm.addEventListener('submit', sendDataToLambda);
+backToForm.addEventListener('click',showForm);
 burguer.addEventListener('click',removeSticky);
 
 // Now for the good stuff. This is the function that will send our data to AWS.
