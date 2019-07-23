@@ -1,14 +1,16 @@
 'use strict'
 
-// document.getElementById
-// document.getElementById('budget')
-// document.querySelector('.thank-you')
-
+var burguer = document.getElementById('burguer');
+var budget= document.getElementById('budget')
+var thankYou = document.querySelector('.thank-you')
+var contactForm = document.getElementById('serverless-contact-form')
+var backToForm = document.getElementsByClassName('back-to-form')[0]
+var menuAndForm = document.getElementById('utilityColumn');
 
 // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
 document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
 document.getElementsByClassName('back-to-form')[0].addEventListener('click',showForm);
-
+burguer.addEventListener('click',removeSticky);
 
 // Now for the good stuff. This is the function that will send our data to AWS.
 function sendDataToLambda(e) {
@@ -73,4 +75,10 @@ async function hideFeedback() {
   
 }
 
+function removeSticky() {
+  menuAndForm.classList.remove("sticky-top");
+}
 
+function addSticky() {
+  menuAndForm.classList.add("sticky-top");
+}
