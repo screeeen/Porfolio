@@ -16,29 +16,30 @@
 
 <!-- BODY-->
 
-<body>
+<body data-spy="scroll" data-target="#menu-options" data-offset="0">
   <!-- style="margin-left:5vw; transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) -->
   <!--PROGRESS BAR-->
   <div id="progess-bar" class="progress shadow-sm blue d-all sticky-top" style="height: 6px;z-index:2000">
     <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="15" aria-valuemin="0"
-      aria-valuemax="innerHeight"></div>
+      aria-valuemax="innerHeight">
+    </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" >
     <!--BURGUER-->
     <button id="burguer" class="btn p-6 d-all d-lg-none " type="button" data-toggle="collapse"
       data-target=".multicollapse" aria-expanded="false" aria-controls="menu-options">
       <span class="fa fa-plus fa-lg"></span>
     </button>
 
-    <div class="row">
+
+    <div class="row" >
       <div id="utilityColumn" class="sticky-top col-md-3 d-lg-block">
 
         <!--MENU-->
 
         <div id="menu-options" class="d-lg-block collapse multicollapse menu list-group list-group-flush">
-          <a href="#interaction-design"
-            class="menu-interaction list-group-item list-group-item-action active">INTERACTION DESIGN</a>
+          <a href="#interaction-design" class="menu-interaction list-group-item list-group-item-action active">INTERACTION DESIGN</a>
           <a href="#game-design" class="menu-game list-group-item list-group-item-action">GAME DESIGN</a>
           <a href="#virtual-reality" class="menu-virtual list-group-item list-group-item-action">VIRTUAL REALITY</a>
           <a href="#animation" class="menu-animation list-group-item list-group-item-action">ANIMATION</a>
@@ -172,9 +173,9 @@
       <!-- GAME DESIGN-->
 
 
-      <div id="game-design" class="col-md-3 ">
+      <div id="game-design" class="col-md-3 mt-5">
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3 mt-5">
         <h3>Game Design</h3>
         <p class="">
           My profile as a game designer is very close to the interaction design role speciality in storytelling,
@@ -188,7 +189,7 @@
         <img src="./images/games_images/2016-03-05 12.39.34.png" class="img-fluid " alt="">
         <img src="./images/games_images/2016-03-05 12.31.10.png" class="img-fluid " alt="">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-5">
         <img src="./images/games_images/map2 copy.jpg" class="img-fluid " alt="">
         <img src="./images/games_images/posters_Downhill_Detail.png" class="img-fluid " alt="">
         <img src="./images/games_images/SerieB_1.png" class="img-fluid " alt="">
@@ -199,9 +200,9 @@
 
       <!-- VIRTUAL DESIGN-->
 
-      <div id="virtual-reality" class="col-md-3 ">
+      <div id="virtual-reality" class="col-md-3 mt-5">
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3 mt-5">
         <h3>Virtual Reality</h3>
         <p class="">
           Use case study adaption of interfaces to use case set up of platform operability
@@ -209,7 +210,7 @@
         <img src="./images/graphics_images/000_Passenger_Leaflet.png" class="img-fluid " alt="">
         <!-- <img src="./images/graphics_images/000_ manual_proto.png" class="img-fluid " alt=""> -->
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-5">
         <img src="./images/VR_images/IFVR_Proto.png" class="img-fluid " alt="">
         <img src="./images/VR_images/IFVR_UI.png" class="img-fluid " alt="">
       </div>
@@ -217,19 +218,19 @@
 
 
       <!-- ANIMATION DESIGN-->
-
-      <div class="col-md-3">
+      <div ></div>
+      <div id ="animation" class="col-md-3 mt-5">
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3 mt-5">
         <h3>Animation</h3>
         <p class="">my animations sdfkha snpchñsghñkshclkdhgl
           ksdfhvklfsdhgksdfhgkjdfhgkdfhgkjs
           dhgksdhglksdhfk</p>
       </div>
-      <div class="col-md-3 ">
+      <div class="col-md-3 mt-5">
         <img style="margin-left:-2vw;transform:rotateZ(-5deg)" src="./images/graphics_images/poster_roland.png" class="img-fluid" alt="">
       </div>
-          <div class="col-md-3 ">
+          <div class="col-md-3 mt-5">
         <img src="./images/graphics_images/splash _2732_2048.png" class="img-fluid " alt="">
     </div>
 
@@ -248,6 +249,9 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
   </div>
+</div>
+
+
 </body>
 
 </html>
