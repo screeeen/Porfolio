@@ -1,3 +1,4 @@
+
 .blue {
   background-color: #001a4f;
   color: white;
@@ -16,14 +17,18 @@
   outline: none;
 }
 
+.nice-font{
+font-family: 'Karla', sans-serif;
+}
+
 .form-control {
   font-size: 12px;
   /* font-weight: bold;   */
-  color: white;
+  color: #001a4f;
   height: 2%;
-  background-color: #001a4f;
+  background-color: white;
   margin: 8%;
-  border: 2px solid white;
+  border: 2px solid #001a4f;
   width: 75%;
   overflow: visible;
 }
@@ -34,34 +39,34 @@ label {
 
 ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: #001a4f;
   opacity: 1; /* Firefox */
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: #001a4f;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: white;
-  background-color: #001a4f;
+  color: #001a4f;
+  background-color: white;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: white;
-  background-color: #001a4f;
+  color: #001a4f;
+  background-color: white;
 }
 
 input[type='text']:focus,
 input[type='email']:focus,
 textarea:focus,
 select:focus {
-  background-color: #001a4f !important;
-  color: white !important;
+  background-color: white !important;
+  color: #001a4f !important;
   border: none;
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
@@ -70,8 +75,8 @@ select:focus {
 }
 
 ::-webkit-validation-bubble-message {
-  background-color: #001a4f !important;
-  color: white;
+  background-color: white !important;
+  color: #001a4f;
 }
 
 .scrollspy-example {
@@ -103,7 +108,7 @@ select:focus {
 
 .fade-out {
   transition:opacity 1s linear;
-  /* transition-delay: .5s; */
+  transition-delay: .5s;
   opacity:0;
 }
 .fade-in {

@@ -10,7 +10,10 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+
 </head>
 
 
@@ -25,12 +28,12 @@
     </div>
   </div>
 
-  <div class="container-fluid" >
-    <!--BURGUER-->
-    <button id="burguer" class="btn p-6 d-all d-lg-none " type="button" data-toggle="collapse"
-      data-target=".multicollapse" aria-expanded="false" aria-controls="menu-options">
-      <span class="burguer-icon fa fa-plus fa-lg"></span>
-    </button>
+  <!--BURGUER-->
+  <button id="burguer" class="btn blue-font d-all d-lg-none " type="button" data-toggle="collapse"
+    data-target=".multicollapse" aria-expanded="false" aria-controls="menu-options">
+    <span class="burguer-icon fa fa-plus fa-lg"></span>
+  </button>
+  <div class="container-fluid">
 
 
     <div class="row" id="miguel-portfolio">
@@ -38,26 +41,31 @@
 
         <!--MENU-->
 
-        <div id="menu-options" class=" blue d-lg-block m-0 collapse multicollapse menu list-group list-group-flush">
-          <a href="#miguel-portfolio" class="menu-miguel list-group-item list-group-item-action active">MIGUEL PORTFOLIO</a>
-          <a href="#interaction-design" class="menu-interaction list-group-item list-group-item-action">INTERACTION DESIGN</a>
-          <a href="#game-design" class="menu-game list-group-item list-group-item-action">GAME DESIGN</a>
-          <a href="#virtual-reality" class="menu-virtual list-group-item list-group-item-action">VIRTUAL REALITY</a>
-          <a href="#animation" class="menu-animation list-group-item list-group-item-action">ANIMATION</a>
+        <div id="menu-options" class="d-lg-block m-0 collapse multicollapse menu list-group list-group-flush">
+          <a href="#miguel-portfolio"
+            class="menu-miguel blue-font nice-font list-group-item list-group-item-action active">MIGUEL PORTFOLIO</a>
+          <a href="#interaction-design"
+            class="menu-interaction blue-font nice-font list-group-item list-group-item-action">INTERACTION DESIGN</a>
+          <a href="#game-design" class="menu-game list-group-item blue-font nice-font list-group-item-action">GAME
+            DESIGN</a>
+          <a href="#virtual-reality"
+            class="menu-virtual blue-font nice-font list-group-item list-group-item-action">VIRTUAL REALITY</a>
+          <a href="#animation"
+            class="menu-animation blue-font nice-font list-group-item list-group-item-action">ANIMATION</a>
         </div>
 
 
 
         <!--CONTACT FORM-->
-        <div id="form-container" class="d-lg-block collapse multicollapse col p-2 pb-5 h-50 rounded-bottom blue">
+        <div id="form-container" class="d-lg-block collapse multicollapse col p-2 pb-5 h-50 rounded-bottom">
           <div class="col">
             <div class="thank-you h-100" hidden>
               <h3 class="p-2">Thank you</h3>
               <p class="p-2">I will get back to you shortly.</p>
-              <button class="back-to-form">Show</button>
+              <!-- <button class="back-to-form">Show</button> -->
             </div>
             <form id="serverless-contact-form" method="POST">
-              <h3 class="p-2">Hello?</h3>
+              <h3 class="p-2 blue-font nice-font">Hello?</h3>
               <div class="ml-1">
                 <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
                 <input type="text" name="company" id="company" class="form-control" placeholder="Company Name" required>
@@ -78,7 +86,7 @@
                   <textarea class="form-control" name="message" id="message" rows="3"
                     placeholder="Write here your proposal"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary blue">Submit</button>
+                <button type="submit" class="btn nice-font btn-primary blue border-0">Submit</button>
               </div>
             </form>
           </div>
@@ -89,17 +97,16 @@
 
 
       <!--RIGHT SIDE-->
-
-
       <div class="col-md-3">
         <img src="./images/graphics_images/Hello_Anim.gif" class="img-fluid" alt="">
+        <!-- <canvas class="zdog-canvas blue rounded p-5" width="100" height="240"></canvas> -->
       </div>
       <script type="text/javascript" src="./progress.js"></script>
       <script type="text/javascript" src="./menu.js"></script>
       <script type="text/javascript" src="./form.js"></script>
 
       <div class="col-md-3">
-        <p class="pt-4 pb-5">
+        <p class="pt-4 pb-5 blue-font nice-font ">
           Hello, I'm Miguel.<br>
           <strong>UX & Digital Product Designer</strong><br>
           with expertise in <strong>interaction design.</strong><br>
@@ -149,11 +156,11 @@
       <!-- INTERACTION DESIGN-->
 
 
-      <div id="interaction-design" class="col-md-3 ">
+      <div id="interaction-design" class="col-md-3 blue-font nice-font ">
       </div>
       <div class="col-md-4 ">
         <h3>Interaction Design</h3>
-        <p class="">
+        <p class="blue-font nice-font">
           my work as interface designer
           tackle operational gaps bwtween tech and human
           explore ways to convey business and user non friction
@@ -176,11 +183,11 @@
       <!-- GAME DESIGN-->
 
 
-      <div id="game-design" class="col-md-3 mt-5">
+      <div id="game-design" class="col-md-3 mt-5 blue-font nice-font">
       </div>
       <div class="col-md-3 mt-5">
-        <h3>Game Design</h3>
-        <p class="">
+        <h3 class="blue-font nice-font">Game Design</h3>
+        <p class="blue-font nice-font">
           My profile as a game designer is very close to the interaction design role speciality in storytelling,
           gameplay
           mechanincs, analysis and conversion worked on AAA titles, cross-platform social products. I have
@@ -206,8 +213,8 @@
       <div id="virtual-reality" class="col-md-3 mt-5">
       </div>
       <div class="col-md-3 mt-5">
-        <h3>Virtual Reality</h3>
-        <p class="">
+        <h3 class="blue-font nice-font">Virtual Reality</h3>
+        <p class="blue-font nice-font">
           Use case study adaption of interfaces to use case set up of platform operability
         </p>
         <img src="./images/graphics_images/000_Passenger_Leaflet.png" class="img-fluid " alt="">
@@ -221,38 +228,41 @@
 
 
       <!-- ANIMATION DESIGN-->
-      <div ></div>
-      <div id ="animation" class="col-md-3 mt-5">
+      <div></div>
+      <div id="animation" class="col-md-3 mt-5">
       </div>
       <div class="col-md-3 mt-5">
-        <h3>Animation</h3>
-        <p class="">my animations sdfkha snpchñsghñkshclkdhgl
+        <h3 class="blue-font nice-font">Animation</h3>
+        <p class="blue-font nice-font">my animations sdfkha snpchñsghñkshclkdhgl
           ksdfhvklfsdhgksdfhgkjdfhgkdfhgkjs
           dhgksdhglksdhfk</p>
       </div>
       <div class="col-md-3 mt-5">
-        <img style="margin-left:-2vw;transform:rotateZ(-5deg)" src="./images/graphics_images/poster_roland.png" class="img-fluid" alt="">
+        <img style="margin-left:-2vw;transform:rotateZ(-5deg)" src="./images/graphics_images/poster_roland.png"
+          class="img-fluid" alt="">
       </div>
-          <div class="col-md-3 mt-5">
+      <div class="col-md-3 mt-5">
         <img src="./images/graphics_images/splash _2732_2048.png" class="img-fluid " alt="">
+      </div>
+
+
+      <!-- style="margin-left:5vw; transform:rotateZ(-5deg)" -->
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <!-- <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+        <script src="./zdog-demo.js"></script> -->
     </div>
-
-
-    <!-- style="margin-left:5vw; transform:rotateZ(-5deg)" -->
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
   </div>
-</div>
 
 
 </body>

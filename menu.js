@@ -1,3 +1,7 @@
+'use strict'
+
+// TODO: refactor this
+
 var menuOptions = document.getElementById("menu-options");
 var miguel = document.getElementsByClassName("menu-miguel")[0];
 var interaction = document.getElementsByClassName("menu-interaction")[0];
