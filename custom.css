@@ -110,6 +110,7 @@ select:focus {
   transition-delay: .5s;
   opacity:0;
 }
+
 .fade-in {
   transition: opacity 1s linear;
   transition-delay: 1.6s;
@@ -120,11 +121,33 @@ select:focus {
 /* -------------CARD--------------- */
 .card{
 border-radius: 14px;
-background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(0,0,124,1) 100%) fixed;
-box-shadow: -1px 15px 30px -12px black;
-margin: 20px;
+/* background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(0,0,124,1) 100%) fixed; */
+box-shadow: -1px 15px 18px -12px black;
+margin: 12%;
 /* height: 55vh; */
-width: 80%;
+width: 75%;
+background: linear-gradient(130deg, #11ff00, #b968ff);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 4s ease infinite;
+-moz-animation: AnimationName 4s ease infinite;
+animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .card-content{
@@ -185,8 +208,33 @@ width: 80%;
   z-index: 200;
 }
 
-/* .plant-icon{
-  width: 80px;
-  height: 80px;
-} */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* height: 100px;
+  width: 100px; */
+  /* outline: black; */
+  /* background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;*/
+  /* background-image: none;  */
+  filter: saturate(1300%) brightness(70%) hue-rotate(-0.25turn);
+
+  /* background-color: blue; */
+  /* box-shadow: -1px 1px 3px -1px black; */
+}
+
+.carousel-control-next-icon:after
+{
+  /* content: '·';
+  font-size: 55px;
+  font-weight: bolder;
+  color: blue; */
+}
+
+.carousel-control-prev-icon:after {
+  /* content: '·';
+  font-size: 55px;
+  font-weight: bolder;
+  color: blue; */
+}
 
