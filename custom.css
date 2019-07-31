@@ -4,10 +4,6 @@
   color: white;
 }
 
-/* .nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-} */
 
 .blue-font{
   color: #001a4f;
@@ -375,4 +371,17 @@ animation: AnimationName 4s ease infinite; */
 
 .timeline-body > p + p {
   margin-top: 5px;
+}
+
+
+
+
+
+.list-group-item{
+  height: 2em;
+  border:none;
+}
+
+.list-group-item-action{
+vertical-align: 1em;
 }
