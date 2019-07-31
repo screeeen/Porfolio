@@ -4,6 +4,9 @@
   color: white;
 }
 
+/* body{
+  background: linear-gradient(to bottom, rgb(234, 253, 226) 0%, rgba(10,10,124,1) 65%, rgb(184, 184, 253) 100%) fixed !important;
+} */
 
 .blue-font{
   color: #001a4f;
@@ -157,7 +160,11 @@ animation: AnimationName 4s ease infinite; */
 }
 
 .card-image-slot{
-  height: 60%; 
+  height: 400px; 
+}
+
+.text-slot{
+  height: 100px; 
 
 }
 
@@ -165,8 +172,9 @@ animation: AnimationName 4s ease infinite; */
   position: relative;
   border-top-left-radius:14px;
   border-top-right-radius: 14px;
-  width: 120%;
-  left: -10%;
+  /* width: 130%; */
+  left: -20%;
+  height: 200px;
   /* width: 100%; */
 }
 
