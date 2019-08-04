@@ -169,7 +169,7 @@ animation: AnimationName 4s ease infinite; */
   border-top-left-radius:14px;
   border-top-right-radius: 14px;
   /* width: 130%; */
-  left: -20%;
+  /* left: -20%; */
   height: 200px;
   /* width: 100%; */
 }
