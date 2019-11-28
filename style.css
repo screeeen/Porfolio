@@ -34,6 +34,9 @@ info-section {
 .title {
   font-size: 1.8em;
   padding-bottom: 20px;
+  font-weight: bolder;
+  font-kerning: none;
+  letter-spacing: -2px;
   top: 0;
   left: 0;
 }
@@ -60,6 +63,10 @@ a {
 p {
   font-size: 12px;
   /* padding: 4px; */
+}
+
+.bolder {
+  font-weight: bolder;
 }
 
 li {
