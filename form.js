@@ -30,9 +30,9 @@ function sendDataToLambda(e) {
   // Remember those form values we just grabbed? We're going to put them into an object here.
   var body = {
     name: formName,
-    // company: formCompany,
+    company: {},
     email: formEmail,
-    // budget: formBudget,
+    budget: {},
     message: formMessage
   }
   // Here, we instantiate our Request. This is a special object used by the Fetch API so it knows where to send data, what data to send, and how to send it.
@@ -46,7 +46,10 @@ function sendDataToLambda(e) {
   // Call the Fetch API to make our request
   fetch(lambdaRequest)
     // This is where you can handle errors. This is just an example, so we won't cover that.
-    .then(response => console.log(response))
+    .then(response => {
+      console.log(response)
+      console.log("body: ",body);
+    })
     .catch(err => console.log(err));
 
       hideForm();

@@ -14,6 +14,10 @@
   line-height: 1.2em;
 }
 
+.contact-form{
+  display:none;
+}
+
 .c1,
 .c2 {
   object-fit: contain;
@@ -207,7 +211,7 @@ order:2;
     width: 50%;
     object-fit: contain;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 10px 0 0 5px;
   }
 
   .two-col {
