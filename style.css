@@ -57,8 +57,26 @@ a {
   text-decoration: none;
   padding: 2px;
   display: inline-block;
-  color: black;
+  color: darkslategrey;
+  outline: 0;
 }
+
+a:hover {
+color:gray;
+}
+
+a:active {
+  color:black;
+  }
+
+a::after {
+  /* display: inherit; */
+  margin: 0 132px 0 0;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 100;
+  content: ' ⤜';
+}
+
 
 p {
   font-size: 12px;
@@ -73,13 +91,6 @@ li {
   font-size: 12px;
 }
 
-a::after {
-  /* display: inherit; */
-  margin: 0 132px 0 0;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 100;
-  content: ' ⤜';
-}
 
 h2 {
   font-weight: bold;
