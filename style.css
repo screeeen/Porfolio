@@ -40,9 +40,14 @@ info-section {
   padding-bottom: 20px;
   font-weight: bolder !important;
   font-kerning: none !important;
-  letter-spacing: 6px !important;
+  letter-spacing: 2px !important;
   top: 0;
   left: 0;
+}
+
+.lesskerning{
+  letter-spacing: -3px !important;
+
 }
 
 .horse {
