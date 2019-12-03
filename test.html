@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .img-magnifier-container {
+      position: relative;
+    }
+
+    .img-magnifier-glass {
+      position: absolute;
+      border: 3px solid #000;
+      border-radius: 50%;
+      cursor: none;
+      /*Set the size of the magnifier glass:*/
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="img-magnifier-container">
+    <img id="myimage" src="./images/graphics_images/Poster_on_Wall_videojuegos_cortos.png" width="600" height="400">
+  </div>
+
+  <p>Feel free to change the strength of the magnifier glass when initiating the magnify function.</p>
+
+  <script type="text/javascript" src="./Magnifier.js"></script>
+  <script>
+    console.log('mag', magnify, Magnifier.js);
+    magnify("myimage", 2);
+  </script>
+
+</body>

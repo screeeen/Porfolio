@@ -34,11 +34,13 @@ info-section {
 }
 
 .title {
-  font-size: 1.4em;
+  font-family: Notable;
+  font-size: 1.5em !important;
+  line-height: 1.2em !important;
   padding-bottom: 20px;
-  font-weight: bolder;
-  font-kerning: none;
-  letter-spacing: -2px;
+  font-weight: bolder !important;
+  font-kerning: none !important;
+  letter-spacing: 6px !important;
   top: 0;
   left: 0;
 }
