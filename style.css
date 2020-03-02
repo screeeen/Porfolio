@@ -22,13 +22,17 @@ span {
 
 .fila {
   width: 100%;
-  /* height: px; */
-  background-color: transparent;
-
+  height: 60px;
+  background-color: yellow;
   position: relative;
+  box-shadow: inset 0px 0px 0px lightblue;
+  transition: box-shadow 3.5s ease ;
+  margin: 10px;
+  overflow:hidden;
 }
 
-.fila:before {
+
+/* .fila:before {
   content: '';
   width: 0%;
   height: 100%;
@@ -37,11 +41,12 @@ span {
   top: 0;
   left: 0;
   transition: width 2.09s ease;
-  /* z-index: 1; */
-}
+  z-index: 1;
+} */
 
-.fila:hover:before {
-  width: 100%;
+.fila:hover {
+  box-shadow: inset 100vw 0px 0px lightblue;
+  /* width: 100%; */
 }
 
 .contact-form {
@@ -141,7 +146,9 @@ li {
 h2 {
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 20px;
+  padding: 20px 0 0 20px;
+  z-index: -5;
+  vertical-align: 36px;
 }
 
 hr {
