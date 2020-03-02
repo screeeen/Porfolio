@@ -14,8 +14,38 @@
   line-height: 1.2em;
 }
 
-.contact-form{
-  display:none;
+span {
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.fila {
+  width: 100%;
+  /* height: px; */
+  background-color: transparent;
+
+  position: relative;
+}
+
+.fila:before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background-color: darkslateblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 2.09s ease;
+  /* z-index: 1; */
+}
+
+.fila:hover:before {
+  width: 100%;
+}
+
+.contact-form {
+  display: none;
 }
 
 .c1,
@@ -35,7 +65,7 @@ info-section {
 
 .title {
   font-family: Notable;
-  font-size: 1.5em !important;
+  font-size: 2.5em !important;
   line-height: 1.2em !important;
   padding-bottom: 20px;
   font-weight: bolder !important;
@@ -43,11 +73,13 @@ info-section {
   letter-spacing: 2px !important;
   top: 0;
   left: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
 }
 
-.lesskerning{
+.lesskerning {
   letter-spacing: -3px !important;
-
 }
 
 .horse {
@@ -56,7 +88,6 @@ info-section {
   /* position: absolute;
   bottom:0;
   right:0; */
-
 }
 
 .icon {
@@ -110,7 +141,7 @@ li {
 h2 {
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 0.4em;
+  padding-bottom: 20px;
 }
 
 hr {
@@ -119,6 +150,15 @@ hr {
   margin: 12px 0;
   color: black;
   background-color: black; /* Modern Browsers */
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex-column > p {
+  padding: 0 24px 0 0;
 }
 
 .project-info {
@@ -183,19 +223,17 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .c1 {
+    order: 2;
+  }
 
-.c1{
-order:2;
-}
-
-.c2{
-  order:1;
-}
-.menu-content{
-  visibility: hidden;
-  display:none;
-}
-
+  .c2 {
+    order: 1;
+  }
+  .menu-content {
+    visibility: hidden;
+    display: none;
+  }
 }
 @media (min-width: 600px) {
   .c1 {
@@ -237,37 +275,7 @@ order:2;
     left: 0;
   }
 
-  .menu-content{
+  .menu-content {
     visibility: visible;
   }
 }
-/* 
-@media (min-width: 800px) {
-  .c2 {
-    width: 30%;
-    top: 0;
-  }
-
-  .half-size {
-    width: 50%;
-    object-fit: contain;
-    box-sizing: border-box;
-    padding: 10px 0;
-  }
-
-  .two-col {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-  }
-  .title {
-    font-size: 1.8em;
-    padding-bottom: 20px;
-    font-weight: bolder;
-    font-kerning: none;
-    letter-spacing: -2px;
-    top: 0;
-    left: 0;
-  }
-} */
