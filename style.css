@@ -16,8 +16,17 @@
 
 span {
   font-weight: bold;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  padding: 20px 20px 10px 0;
+}
+
+video {
+  padding: 20px 20px 20px 0;
+}
+
+video > source {
+  margin: 10px;
+  padding: 20px;
+  width: 320px;
 }
 
 .fila {
