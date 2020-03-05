@@ -251,4 +251,8 @@ textarea {
   .menu-content {
     visibility: visible;
   }
+
+  .bold {
+    font-weight: bold;
+  }
 }

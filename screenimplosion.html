@@ -27,29 +27,70 @@
           <p>#web</p>
         </div>
         <div class="project-info">
-          <p>Website for my independent video games label with two commercially released games on iOS, Android and
-            desktop. Also a documentary about independent videogames.</p>
-            <span>The target</span>
-            <p>Screen Implosion is a studio for small independent video games for desktop and mainly mobile platforms. Under the studio label I could develop some of my personal interests regarding interactive media and videogames.</p>
-            <span>The Scope</span>
-            <span>The Engine</span>
-            <span>The Challenge</span>
-            <span>The Process</span>
-            <span>Validation</span>
-            <span>Learnings</span>
-        </div>
+          <p class="bold">Website for my independent video games label with two commercially released games on iOS,
+            Android and desktop. Also a documentary about independent videogames.</p>
+          <div class="two-col">
+            <div class="flex-column">
+              <span>The target</span>
+              <p>Screen Implosion is a studio for small independent video games for desktop and mainly mobile platforms.
+                Under the studio label I could develop some of my personal interests regarding interactive media and
+                videogames.
+                The aim of these games were to practice programming, launch them on digital stores, send them to events
+                and
+                be part of an emergent community of independent game developers.</p>
+            </div>
+            <img src="./images/indie_games/square_screen_logo.png" alt="">
+          </div>
+          <img src="./images/indie_games/webs_min.png" alt="">
 
-        <img src="./images/indie_games/webs_min.png" alt="">
+          <span>The Scope</span>
+          <p>I started doing small videogames in a tool called Game Maker with a rich API for fast development, mainly
+            2D. Then I started learning Unity and some 3D gaming.</p>
+          <span>The Engine</span>
+          <p>I coded all the games mainly in C# within Unity. I created the 3d models in Cinema 4D and the graphics in
+            Photoshop or Illustrator.</p>
+          <span>The process</span>
+          <p>This videogames would come up out of game jams, ideas or experiments with technologies.</p>
+          <span>Validation</span>
+          <p>"Downhill* Chapter One" was selected in many independent videogame festivals worldwide including Tokyo Game
+            Show.</p>
+          <span>Learnings</span>
+          <p>I learnt a lot, not only on the technical side but also on the personal side. It was an enriching
+            experience
+            full of new connections and friends. A very creative period.</p>
+        </div>
+        <div class="two-col">
+          <div class="flex-column">
+          <video controls autoplay loop>
+            <source src="./images/indie_games/infinite_landscape.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+          <video controls autoplay loop>
+            <source src="./images/indie_games/midi_player.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <video controls autoplay loop>
+          <source src="./images/indie_games/rpg.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls autoplay loop>
+          <source src="./images/indie_games/pong_best_daytime.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </section>
     </div>
 
     <div class="c2">
       <a href="javascript:window.location=goto('index')">
         <h1 class="title">HELLO</h1>
-        </a>      <info-section>
+      </a>
+      <info-section>
         <p><span class="icon">🙂</span></p>
         <br>
-        <p>My name is Miguel Ángel Álvarez Rodriguez García Cardalda <span class="bolder">interaction designer</span> with crafting skills and passion</p>
+        <p>My name is Miguel Ángel Álvarez Rodriguez García Cardalda <span class="bolder">interaction designer</span>
+          with crafting skills and passion</p>
         <br>
         <p>Status: available</p>
         <p>Location: Barcelona</p>
@@ -103,7 +144,8 @@
       </info-section>
     </div>
   </div>
-  </div>  <script>
+  </div>
+  <script>
     goto = (direction) => {
       const URL = "file:///Users/miguelangelalvarez/portfolio/" + direction + '.html'
       return URL;
