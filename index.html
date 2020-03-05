@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -13,22 +13,22 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,300,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153492451-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
+    
     gtag('config', 'UA-153492451-1');
-  </script>
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-
-  <title>Document</title>
-</head>
-
-<body>
+    </script>
+    <script>(function (H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement)</script>
+    
+    <title>Document</title>
+    </head>
+    
+    <body style="visibility: hidden;" onload="js_Load()">
   <div class="container" role="main">
     <div class="c1">
       <div class="fila animated">
@@ -94,17 +94,18 @@
       </div>
     </div>
 
-    
+
 
 
     <div class="c2">
       <a href="javascript:window.location=goto('index')">
-      <h1 class="title">HELLO</h1>
+        <h1 class="title">HELLO</h1>
       </a>
       <info-section>
         <img src="./images/Miguel_Alva_Small.jpg" alt="">
         <br>
-        <p>My name is Miguel Ángel Álvarez Rodriguez García Cardalda <span class="bolder">interaction designer</span> with crafting skills and passion</p>
+        <p>My name is Miguel Ángel Álvarez Rodriguez García Cardalda <span class="bolder">interaction designer</span>
+          with crafting skills and passion</p>
         <br>
 
 
@@ -140,12 +141,10 @@
     </div>
   </div>
 
-  <script>
-    goto = (direction) => {
-      const URL = "file:///Users/miguelangelalvarez/portfolio/" + direction + '.html'
-      return URL;
-    }
-  </script>
+
+  <script src="./scripts/goto.js"></script>
+  <script src="./scripts/load.js"></script>
+
 </body>
 
 </html>

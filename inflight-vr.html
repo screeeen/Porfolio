@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body style="visibility: hidden;" onload="js_Load()">
   <div class="container" role="main">
     <div class="c1">
       <section id="inflight">
@@ -232,12 +232,8 @@
     </div>
   </div>
   </div>
-  <script>
-    goto = (direction) => {
-      const URL = "file:///Users/miguelangelalvarez/portfolio/" + direction + '.html'
-      return URL;
-    }
-  </script>
+  <script src="./scripts/goto.js"></script>
+  <script src="./scripts/load.js"></script>
 
 </body>
 

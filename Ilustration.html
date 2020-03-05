@@ -13,7 +13,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
 </head>
-<body>
+<body style="visibility: hidden;" onload="js_Load()">
   <div class="container" role="main">
 
     <div class="c1">
@@ -24,16 +24,9 @@
           <p>Different illustrations without commercial purpose</p>
         </div>
         <div class="project-info">
+          <p></p>
           <p>#digital</p>
         </div>
-        <span>The Target</span>
-        <span>The Scope</span>
-        <span>The Engine</span>
-        <span>The Challenge</span>
-        <span>The Process</span>
-        <span>Validation</span>
-        <span>Learnings</span>
- 
         <div class="two-col">
           <img src="./images/graphics_images/Poster_on_Wall_videojuegos_cortos.png" class="half-size" alt="">
           <img style="margin-left:-2vw;transform:rotateZ(-5deg)" src="./images/graphics_images/poster_roland-min.png"
@@ -103,11 +96,8 @@
       </info-section>
     </div>
   </div>
-  </div>  <script>
-    goto = (direction) => {
-      const URL = "file:///Users/miguelangelalvarez/portfolio/" + direction + '.html'
-      return URL;
-    }
-  </script>
+  </div> 
+  <script src="./scripts/goto.js"></script>
+  <script src="./scripts/load.js"></script>
 </body>
 </html>
