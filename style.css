@@ -63,7 +63,7 @@ info-section {
 .title {
   font-size: 2.5em !important;
   line-height: 1.2em !important;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
   font-weight: bolder !important;
   font-kerning: none !important;
   letter-spacing: 2px !important;
@@ -154,7 +154,7 @@ hr {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 6px 0;
+  padding: 26px;
 }
 
 .flex-grid {
