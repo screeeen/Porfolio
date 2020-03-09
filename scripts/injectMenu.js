@@ -1,13 +1,32 @@
+const page = window.location.href;
+
+
+showButton = () => {
+  const hello ="HELLO";
+const back =" ‹ BACK"
+  let text =''
+  console.log('mypage',page);
+  
+ if (page === 'file:///Users/miguelangelalvarez/portfolio/index.html') {
+   text = hello;
+ } else {
+   text = back;
+ }
+  return text;
+}
+
 document.body.querySelector('.container').innerHTML +=`
-    <div class="c2">
-      <a href="javascript:window.location=goto('index')">
-        <h1 class="title">HELLO</h1>
-      </a>
+<div class='c3'>
+<a href="javascript:window.location=goto('index')">
+<h1 class="title">${showButton()}</h1>
+</a>  
+</div>
+<div class="c2">
+
       <info-section>
         <img src="./images/Miguel_Alva_Small.jpg" alt="">
         <br>
-        <p>My name is Miguel Ángel Álvarez Rodriguez García Cardalda <span class="bolder">interaction designer</span>
-          with crafting skills and passion</p>
+        <p class="bold">My name is Miguel Álvarez. I'm an interaction designer and frontend developer.</p>
         <br>
 
 
@@ -17,31 +36,77 @@ document.body.querySelector('.container').innerHTML +=`
           <p><a href="https://github.com/screeeen" target="_blank">github</a></p>
           <p><a href="https://www.dropbox.com/s/jjutmcj39zmytlu/00_One%20Page%20Resume.pdf?dl=0"
               target="_blank">resume</a></p>
+
         </div>
       </info-section>
+      <div class="bottom-links">
       <hr>
-
-      <info-section class="contact-form">
-        <hr>
-        <p><span class="icon">✉️</span></p>
-        <div class="thank-you" hidden>
-          <p class="">Thank you!</p>
-          <p class="">I will get back to you shortly.</p>
-        </div>
-
-        <form id="serverless-contact-form" method="POST">
-          <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
-            placeholder="Email Address" required>
-          <div class="form-group">
-            <textarea class="form-control" name="message" id="message" rows="3"
-              placeholder="Write here your proposal"></textarea>
-          </div>
-          <input type="submit" value="send"></button>
-        </form>
-      </info-section>
+      <div class="fila animated" style="background-color:transparent">
+      <a href="mailto:miguel@screenimplosion.com?Subject=Hi!" target="_top">
+              <h2>CONTACT ME</h2>
+      </a>
     </div>
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('inflight-vr')">
+          <h2>INFLIGHT VR</h2>
+        </a>
+      </div>
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('eh')">
+          <h2>EMERGENCY HEROES</h2>
+        </a>
+      </div>
+
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('Belote')">
+          <h2>BELOTE</h2>
+        </a>
+      </div>
+
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('screenimplosion')">
+          <h2>SCREEN IMPLOSION</h2>
+        </a>
+      </div>
+
+      <!-- <div class="fila animated">
+        <a href="javascript:window.location=goto('amasc')">
+          <h2>ARENA MONSTER ALIEN SHOOTING CHAOS</h2>
+        </a>
+      </div> -->
+
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('indie-games')">
+          <h2>INDIE GAMES</h2>
+          <p class="hidden" hidden>Gloria very punk</p>
+        </a>
+      </div>
+
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('ilustration')">
+          <h2>ILUSTRATIONS</h2>
+        </a>
+      </div>
+
+      <!-- <div class="fila animated">
+        <a href="javascript:window.location=goto('Animation')">
+          <h2>ANIMATIONS</h2>
+        </a>
+      </div>-->
+
+      <div class="fila animated">
+        <a href="javascript:window.location=goto('lectures')">
+          <h2>LECTURES</h2>
+        </a>
+      </div>
+    </div>
+    </div>
+    
   </div>
-
-
 `;
+
+if (page === 'file:///Users/miguelangelalvarez/portfolio/index.html') {
+  document.querySelector(".bottom-links").setAttribute("hidden", "")
+} else {
+  document.querySelector(".bottom-links").removeAttribute("hidden")
+}

@@ -14,6 +14,10 @@
   line-height: 1.2em;
 }
 
+.bottom-links {
+  padding: 2px 30px 0 0px;
+}
+
 
 span {
   font-weight: bold;
@@ -46,10 +50,15 @@ video > source {
 }
 
 .c1,
-.c2 {
+.c2,.c3 {
   object-fit: contain;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.c3{
+  text-shadow: 0px px white;
+  background-color: white;
 }
 
 section {
@@ -134,7 +143,7 @@ li {
 
 h2 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   padding: 20px 0 0 20px;
   z-index: -5;
   vertical-align: 36px;
@@ -201,8 +210,16 @@ textarea {
   }
 
   .c2 {
-    order: 1;
+    order: 3;
   }
+
+  .c3 {
+    order: 1;
+    /* border:1px solid blue; */
+    position: sticky;
+    top:0;
+  }
+  
   .menu-content {
     visibility: hidden;
     display: none;
@@ -211,13 +228,25 @@ textarea {
 @media (min-width: 600px) {
   .c1 {
     width: 70%;
-    -webkit-order: 2;
-    order: 2;
+    -webkit-order: 3;
+    order: 3;
     height: 100%;
   }
 
   .c2 {
     width: 30%;
+    -webkit-order: 2;
+    order: 2;
+    height: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .c3 {
+    /* border: 1px solid red; */
+    display:block;
+    z-index: 10;
+    width: 100%;
     -webkit-order: 1;
     order: 1;
     height: 100%;
@@ -254,5 +283,6 @@ textarea {
 
   .bold {
     font-weight: bold;
+    font-size: 16px;
   }
 }
