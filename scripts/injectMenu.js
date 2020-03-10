@@ -1,5 +1,4 @@
 const page = window.location.href;
-console.log(page,'...early...', window.location.hostname + '/Porfolio/index.html');
 const pictureURL = window.location.hostname + '/Porfolio'
 console.log(pictureURL,pictureURL + '/images/Miguel_Alva_Small.jpg');
 
@@ -8,7 +7,7 @@ showButton = () => {
   const hello ="HELLO";
 const back =" ‹ BACK"
   let text =''
-  console.log('mypage',page);
+  console.log('mypage',page,'    vs.  ', window.location.hostname + '/Porfolio/index.html');
   
  if (page === window.location.hostname + '/Porfolio/index.html') {
    text = hello;
@@ -29,7 +28,7 @@ document.body.querySelector('.container').innerHTML +=`
 <div class="c2">
 
       <info-section>
-        <img src="${pictureURL} + /images/Miguel_Alva_Small.jpg" alt="">
+        <img src="./images/Miguel_Alva_Small.jpg" alt="">
         <br>
         <p class="bold">My name is Miguel Álvarez. I'm an interaction designer and frontend developer.</p>
         <br>
@@ -110,11 +109,11 @@ document.body.querySelector('.container').innerHTML +=`
   </div>
 `;
 
-if (page === window.location.hostname + '/Porfolio/index.html') {
+if (page === 'https://' + window.location.hostname + '/Porfolio/index.html') {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
-  console.log(page,'......', window.location.hostname + '/Porfolio/index.html');
+  console.log(page,'   vs.   ', window.location.hostname + '/Porfolio/index.html');
   
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  console.log(page,'......', window.location.hostname + '/Porfolio/index.html');
+  console.log(page,'   vs.   ', window.location.hostname + '/Porfolio/index.html');
 }
