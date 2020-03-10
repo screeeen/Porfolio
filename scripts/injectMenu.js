@@ -1,25 +1,25 @@
 const page = window.location.href;
 const pictureURL = window.location.hostname + '/Porfolio'
-console.log(pictureURL,pictureURL + '/images/Miguel_Alva_Small.jpg');
+console.log(pictureURL, pictureURL + '/images/Miguel_Alva_Small.jpg');
 
 
 showButton = () => {
-  const hello ="HELLO";
-const back =" ‹ BACK"
-  let text =''
-  console.log('mypage',page,'    vs.  ', window.location.hostname + '/Porfolio/index.html');
-  
- if (page === window.location.hostname + '/Porfolio/index.html') {
-   text = hello;
- } else {
-   text = back;
- }
+  const hello = "HELLO";
+  const back = " ‹ BACK"
+  let text = ''
+  console.log('mypage', page, '    vs.  ', window.location.hostname + '/Porfolio/index.html');
+
+  if (page === window.location.hostname + '/Porfolio/index.html') {
+    text = hello;
+  } else {
+    text = back;
+  }
   return text;
 }
 
 
 
-document.body.querySelector('.container').innerHTML +=`
+document.body.querySelector('.container').innerHTML += `
 <div class='c3'>
 <a href="javascript:window.location=goto('index')">
 <h1 class="title">${showButton()}</h1>
@@ -109,11 +109,11 @@ document.body.querySelector('.container').innerHTML +=`
   </div>
 `;
 
-if (page === 'https://' + window.location.hostname + '/Porfolio/index.html') {
+if (page === window.location.protocol + window.location.hostname + '/Porfolio/index.html') {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
-  console.log(page,'   vs.   ', window.location.hostname + '/Porfolio/index.html');
-  
+  console.log(page, '   vs.   ', window.location.protocol + window.location.hostname + '/Porfolio/index.html');
+
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  console.log(page,'   vs.   ', window.location.hostname + '/Porfolio/index.html');
+  console.log(page, '   vs.   ', window.location.protocol+window.location.hostname + '/Porfolio/index.html');
 }
