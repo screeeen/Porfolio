@@ -37,12 +37,26 @@ video > source {
 .fila {
   width: 100%;
   height: 60px;
-  background-color: yellow;
+  background-color: #FFFF90;
   position: relative;
   box-shadow: inset 0px 0px 0px lightblue;
   transition: box-shadow 10s ease;
   margin: 10px;
   overflow: hidden;
+}
+
+.contact-fila {
+  background-color: #FFFFBF;
+}
+
+.marker {
+  display:inline-block;
+  padding: 8px;
+  overflow: auto;
+  /* transform-origin: top left; */
+  /* transform:rotateZ(90deg); */
+  background-color: blue;
+  color: white;
 }
 
 .contact-form {
