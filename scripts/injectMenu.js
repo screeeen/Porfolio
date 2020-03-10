@@ -1,5 +1,5 @@
 const page = window.location.href;
-const pictureURL = './images/Miguel_Alva_Small.jpg';
+const pictureURL = '/images/Miguel_Alva_Small.jpg';
 console.log(pictureURL);
 
 
@@ -7,7 +7,6 @@ showButton = () => {
   const hello = "HELLO";
   const back = " ‹ BACK"
   let text = ''
-  console.log('mypage', page, '    vs.  ',window.location.protocol  + '//' +  window.location.hostname + '/Porfolio/index.html');
 
   if (page === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/index.html') {
     text = hello;
@@ -109,7 +108,7 @@ document.body.querySelector('.container').innerHTML += `
   </div>
 `;
 
-if (page === window.location.protocol + window.location.hostname + '/Porfolio/index.html') {
+if (page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html') {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
   console.log(page, '   vs.   ', window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html');
 
