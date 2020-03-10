@@ -1,4 +1,7 @@
 const page = window.location.href;
+console.log(page,'...early...', window.location.hostname + '/Porfolio/index.html');
+const pictureURL = window.location.hostname + '/Porfolio'
+console.log(pictureURL,pictureURL + '/images/Miguel_Alva_Small.jpg');
 
 
 showButton = () => {
@@ -7,13 +10,15 @@ const back =" ‹ BACK"
   let text =''
   console.log('mypage',page);
   
- if (page === 'file:///Users/miguelangelalvarez/portfolio/index.html') {
+ if (page === window.location.hostname + '/Porfolio/index.html') {
    text = hello;
  } else {
    text = back;
  }
   return text;
 }
+
+
 
 document.body.querySelector('.container').innerHTML +=`
 <div class='c3'>
@@ -24,7 +29,7 @@ document.body.querySelector('.container').innerHTML +=`
 <div class="c2">
 
       <info-section>
-        <img src="./images/Miguel_Alva_Small.jpg" alt="">
+        <img src="${pictureURL} + /images/Miguel_Alva_Small.jpg" alt="">
         <br>
         <p class="bold">My name is Miguel Álvarez. I'm an interaction designer and frontend developer.</p>
         <br>
@@ -105,8 +110,11 @@ document.body.querySelector('.container').innerHTML +=`
   </div>
 `;
 
-if (page === 'file:///Users/miguelangelalvarez/portfolio/index.html') {
-  document.querySelector(".bottom-links").setAttribute("hidden", "")
+if (page === window.location.hostname + '/Porfolio/index.html') {
+  document.querySelector(".bottom-links").setAttribute("hidden", "");
+  console.log(page,'......', window.location.hostname + '/Porfolio/index.html');
+  
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
+  console.log(page,'......', window.location.hostname + '/Porfolio/index.html');
 }
