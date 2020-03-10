@@ -1,5 +1,5 @@
 const page = window.location.href;
-const pictureURL = '/Porfolio/images/Miguel_Alva_Small.jpg';
+const pictureURL = '/Porfolio/images/Miguel_Alva_small.jpg';
 console.log(pictureURL);
 
 
