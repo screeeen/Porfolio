@@ -106,7 +106,7 @@ document.body.querySelector('.container').innerHTML += `
   </div>
 `;
 
-if (page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html') {
+if ((page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html')|| (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
