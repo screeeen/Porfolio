@@ -7,7 +7,7 @@ showButton = () => {
   const back = " ‹ BACK"
   let text = ''
 
-  if (page === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/index.html') {
+  if ((page === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/index.html') || (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
     text = hello;
   } else {
     text = back;
