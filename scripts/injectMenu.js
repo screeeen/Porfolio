@@ -85,7 +85,7 @@ document.body.querySelector('.container').innerHTML += `
       </div>
 
       <div class="fila animated">
-        <a href="javascript:window.location=goto('ilustration')">
+        <a href="javascript:window.location=goto('Ilustration')">
           <h2>ILUSTRATIONS</h2>
         </a>
       </div>
