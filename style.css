@@ -177,7 +177,7 @@ hr {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 26px;
+  padding: 16px;
 }
 
 .flex-grid {

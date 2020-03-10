@@ -45,7 +45,7 @@ document.body.querySelector('.container').innerHTML += `
       <hr>
       <div class="fila animated" style="background-color:transparent">
       <a href="mailto:miguel@screenimplosion.com?Subject=Hi!" target="_top">
-              <h2>CONTACT ME</h2>
+              <h2>GET IN TOUCH</h2>
       </a>
     </div>
       <div class="fila animated">
