@@ -1,5 +1,5 @@
 const page = window.location.href;
-const pictureURL = '/images/Miguel_Alva_Small.jpg';
+const pictureURL = '/Porfolio/images/Miguel_Alva_Small.jpg';
 console.log(pictureURL);
 
 
@@ -104,15 +104,11 @@ document.body.querySelector('.container').innerHTML += `
       </div>
     </div>
     </div>
-    
   </div>
 `;
 
 if (page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html') {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
-  console.log(page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html');
-
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  console.log(page === window.location.protocol  + '//' +  window.location.hostname + '/Porfolio/index.html');
 }
