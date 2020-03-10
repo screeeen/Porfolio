@@ -36,7 +36,7 @@ document.body.querySelector('.container').innerHTML += `
           <p><a href="https://www.linkedin.com/in/miguel-angel-alvarez-2ba1b2a/" target="_blank">LinkedIn</a></p>
           <p><a href="http://screeeeen.com/" target="_blank">videogames </a></p>
           <p><a href="https://github.com/screeeen" target="_blank">github</a></p>
-          <p><a href="https://www.dropbox.com/s/jjutmcj39zmytlu/00_One%20Page%20Resume.pdf?dl=0"
+          <p><a href="https://www.dropbox.com/s/jl18d97acfb189l/000_Miguel_Angel_Alvarez_CV_.pdf?dl=0"
               target="_blank">resume</a></p>
 
         </div>
