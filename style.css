@@ -76,7 +76,7 @@ video > source {
 }
 
 section {
-  padding: 12px 0 30px 0;
+  padding: 0 0 30px 0;
 }
 
 info-section {
@@ -158,7 +158,7 @@ li {
 h2 {
   font-weight: bold;
   font-size: 22px;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 20px;
   z-index: -5;
   vertical-align: 36px;
 }
