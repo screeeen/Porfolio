@@ -98,7 +98,7 @@ document.body.querySelector('.container').innerHTML += `
 
       <div class="fila animated">
         <a href="javascript:window.location=goto('lectures')">
-          <h2>LECTURES</h2>
+          <h2>TALKS</h2>
         </a>
       </div>
     </div>
