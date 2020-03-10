@@ -110,9 +110,9 @@ document.body.querySelector('.container').innerHTML += `
 
 if (page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html') {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
-  console.log(page, '   vs.   ', window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html');
+  console.log(page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html');
 
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  console.log(page, '   vs.   ', window.location.protocol  + '//' +  window.location.hostname + '/Porfolio/index.html');
+  console.log(page === window.location.protocol  + '//' +  window.location.hostname + '/Porfolio/index.html');
 }
