@@ -1,4 +1,5 @@
 goto = (direction) => {
-  const URL = "file:///Users/miguelangelalvarez/portfolio/" + direction + '.html'
+  // const URL = "https://screeeen.github.io/Porfolio/" + direction + '.html'
+   const URL = window.location.hostname + direction + '.html'
   return URL;
 }
