@@ -1,6 +1,6 @@
 const page = window.location.href;
-const pictureURL = window.location.hostname + '/Porfolio'
-console.log(pictureURL + '/images/Miguel_Alva_Small.jpg');
+const pictureURL = './images/Miguel_Alva_Small.jpg';
+console.log(pictureURL);
 
 
 showButton = () => {
@@ -28,7 +28,7 @@ document.body.querySelector('.container').innerHTML += `
 <div class="c2">
 
       <info-section>
-        <img src="./images/Miguel_Alva_Small.jpg" alt="">
+        <img src=${pictureURL} alt="">
         <br>
         <p class="bold">My name is Miguel Álvarez. I'm an interaction designer and frontend developer.</p>
         <br>
