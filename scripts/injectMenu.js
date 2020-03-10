@@ -7,7 +7,7 @@ showButton = () => {
   const hello = "HELLO";
   const back = " ‹ BACK"
   let text = ''
-  console.log('mypage', page, '    vs.  ', window.location.hostname + '/Porfolio/index.html');
+  console.log('mypage', page, '    vs.  ',window.location.protocol + window.location.hostname + '/Porfolio/index.html');
 
   if (page === window.location.hostname + '/Porfolio/index.html') {
     text = hello;
@@ -115,5 +115,5 @@ if (page === window.location.protocol + window.location.hostname + '/Porfolio/in
 
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  console.log(page, '   vs.   ', window.location.protocol+window.location.hostname + '/Porfolio/index.html');
+  console.log(page, '   vs.   ', window.location.protocol + window.location.hostname + '/Porfolio/index.html');
 }
