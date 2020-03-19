@@ -43,64 +43,64 @@ document.body.querySelector('.container').innerHTML += `
       </info-section>
       <div class="bottom-links">
       <hr>
-      <div class="fila animated" style="background-color:transparent">
+      <div class="fila contact-fila" style="background-color:transparent">
       <a href="mailto:miguel@screenimplosion.com?Subject=Hi!" target="_top">
               <h2>GET IN TOUCH</h2>
       </a>
     </div>
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('inflight-vr')">
-          <h2>INFLIGHT VR</h2>
-        </a>
-      </div>
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('eh')">
-          <h2>EMERGENCY HEROES</h2>
-        </a>
-      </div>
+    
+    <a href="javascript:window.location=goto('inflight-vr')">
+    <div class="fila">
+        <div class="marker">
+            <p>PRODUCT DESIGN</p>
+        </div>
+        <h2 class="right">INFLIGHT VR</h2>
+    </div>
+</a>
+<a href="javascript:window.location=goto('eh')">
+    <div class="fila">
+        <div class="marker">
+            <p>GAME DESIGN</p>
+        </div>
+        <h2 class="right">EMERGENCY HEROES</h2>
+    </div>
+</a>
 
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('Belote')">
-          <h2>BELOTE</h2>
-        </a>
-      </div>
+<a href="javascript:window.location=goto('Belote')">
+    <div class="fila">
+        <div class="marker">
+            <p>UX DESIGN</p>
+        </div>
+        <h2 class="right">BELOTE</h2>
+    </div>
+</a>
 
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('screenimplosion')">
-          <h2>SCREEN IMPLOSION</h2>
-        </a>
-      </div>
+<a href="javascript:window.location=goto('indie-games')">
+    <div class="fila">
+        <div class="marker">
+            <p>GAME DESIGN</p>
+        </div>
+        <h2 class="right">INDIE GAMES</h2>
+    </div>
+</a>
 
-      <!-- <div class="fila animated">
-        <a href="javascript:window.location=goto('amasc')">
-          <h2>ARENA MONSTER ALIEN SHOOTING CHAOS</h2>
-        </a>
-      </div> -->
+<a href="javascript:window.location=goto('Ilustration')">
+    <div class="fila">
+        <div class="marker">
+            <p>CREATIVE</p>
+        </div>
+        <h2 class="right">ANIMATIONS</h2>
+    </div>
+</a>
 
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('indie-games')">
-          <h2>INDIE GAMES</h2>
-          <p class="hidden" hidden>Gloria very punk</p>
-        </a>
-      </div>
-
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('Ilustration')">
-          <h2>ILUSTRATIONS</h2>
-        </a>
-      </div>
-
-      <!-- <div class="fila animated">
-        <a href="javascript:window.location=goto('Animation')">
-          <h2>ANIMATIONS</h2>
-        </a>
-      </div>-->
-
-      <div class="fila animated">
-        <a href="javascript:window.location=goto('lectures')">
-          <h2>TALKS</h2>
-        </a>
-      </div>
+<a href="javascript:window.location=goto('lectures')">
+    <div class="fila">
+        <div class="marker">
+            <p>LECTURES</p>
+        </div>
+        <h2 class="right">TALKS</h2>
+    </div>
+</a>
     </div>
     </div>
   </div>
