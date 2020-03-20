@@ -2,208 +2,163 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inflight-VR</title>
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-  <link href="./reset.css" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,300,400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflight-VR</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
 </head>
 
 <body style="visibility: hidden;" onload="js_Load()">
-  <div class="container" role="main">
-    <div class="c1">
-      <section id="inflight">
-        <h2>INFLIGHT VR</h2>
-        <hr>
-        
-        <div class="project-info">
-          <p><a href src='https://www.inflight-vr.com/'>inflight-vr.com</a></p>
-          <p>#Product Design</p>
-        </div>
-        <div class="project-info">
-          <p class="bold">Product design of an inflight entertainment VR platform. Made at Inflight VR GmbH.</p>
-          <img src="./images/VR_images/IFVR_UI.png" alt="">
-          <h3>The Target</h3>
-          <p>Passengers on mid-long haul would avoid the tiresome experience of cabin while enjoying movies, 360 movies,
-            vr videogames, documentaries, news but also
-            infotainment applications like geolocation info interfaces, additional airline resources, shopping etc...
-            On the other hand Airlines try to offer new inflight entertainment solutions providing a fresh experience to
-            their customers and having a platform where
-            feedback and analytics can be enriched, thus improving ther customer experience and improving their revenue.
-          </p>
+    <div class="container" role="main">
+        <div class="c1">
+            <section id="inflight">
+                <h2>INFLIGHT VR</h2>
+                <hr>
 
-          <h3>The Scope</h3>
-          <p>Inflight VR is a start up trying to introduce virtual reality as an inflight Entertainment System.
-            With the aim of providing new services in the framework of mobility 4.0, connecting further digital
-            services,
-            and providing future use cases.
-            It also provides a connection between passengers and airlines via data.</p>
-          <h3>The Engine</h3>
-          <p>The platform is a complex compound of different software and platforms. On the following list I mention the
-            interfaces I systems I took care of:
-          </p>
-          <ul>
-            <li><span>Airline Dashboard</span>
-              <ul>
-                <li>A MERN web application dashboard where airlines can select their content, services and features.
-                  They can
-                  operate and deploy on VR headsets and explore analytics.
-                </li>
-              </ul>
-            </li>
-            <li><span>Third Party Submission System</span>
-              <ul>
-                <li>A MERN web application where third parties can submit their content in order to be part of the
-                  catalogue.
-                </li>
-              </ul>
-            </li>
-            <li><span>Inhouse Operations Software</span>
-              <ul>
-                <li>A MERN web software to manage operations, track headsets, see analytics, content etc...
-                </li>
-              </ul>
-            </li>
-            <li><span>Cabin Crew Handset Devices</span>
-              <ul>
-                <li>A React Native Mobile app for cabin crew controlling the VR headsets, sending notifications, etc..
-                </li>
-              </ul>
-            </li>
-            <li><span>Virtual Reality System</span>
-              <ul>
-                <li>A Unity Virtual Reality client hosting diverse content and applications.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="two-col">
-            <div class="flex-column">
-              <h3>The Challenge</h3>
-              <p>Novel technology brings an oportunity to learn.
-                On one side 2017 there were still a lot of the questions reagarding XR interfaces.
-                How would the user operate the platform without bringing additional hardware to the aircraft?
-                How could we develop a system where an average of 2k for each eye could be streamed to everyheadset?
-                How could I handle all the restrictions and emergency procedures within virtual reality?
-                How could we minimize the motion sickness?
-                How could the software explain to the user the interface when they never put a headset on?
-                I had endless challenges to sort out, every week. </p>
-            </div>
-            <div class="flex-column">
+                <div class="project-info">
+                    <p><a href src='https://www.inflight-vr.com/'>inflight-vr.com</a></p>
+                    <p>#Product Design</p>
+                </div>
+                <div class="project-info">
+                    <p class="bold">Product design of an inflight entertainment VR platform. Made at Inflight VR GmbH.</p>
+                    <img src="./images/VR_images/IFVR_UI.png" alt="">
+                    <h3>The Target</h3>
+                    <p>Passengers on mid-long haul would avoid the tiresome experience of cabin while enjoying movies, 360 movies, vr videogames, documentaries, news but also infotainment applications like geolocation info interfaces, additional airline
+                        resources, shopping etc... On the other hand Airlines try to offer new inflight entertainment solutions providing a fresh experience to their customers and having a platform where feedback and analytics can be enriched, thus improving
+                        ther customer experience and improving their revenue.
+                    </p>
 
-              <h3>The Process</h3>
-              <p>The more demanding structure and user interface in this project was the virtual reality user interface. To comprehend how this
-                system could be
-                easily understood by users I had to put all our assumptions into a dummy prototype with fake media.
-                After testing and iterations I managed to find a sweet spot between functionality, ergonomics,
-                usability and aesthetics.
-                This prototype became the sandbox environment of many ideas and premises to be tested and the proof of
-                concept for
-                production development.</p>
-            </div>
-          </div>
+                    <h3>The Scope</h3>
+                    <p>Inflight VR is a start up trying to introduce virtual reality as an inflight Entertainment System. With the aim of providing new services in the framework of mobility 4.0, connecting further digital services, and providing future use
+                        cases. It also provides a connection between passengers and airlines via data.</p>
+                    <h3>The Engine</h3>
+                    <p>The platform is a complex compound of different software and platforms. On the following list I mention the interfaces I systems I took care of:
+                    </p>
+                    <ul>
+                        <li><span>Airline Dashboard</span>
+                            <ul>
+                                <li>A MERN web application dashboard where airlines can select their content, services and features. They can operate and deploy on VR headsets and explore analytics.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Third Party Submission System</span>
+                            <ul>
+                                <li>A MERN web application where third parties can submit their content in order to be part of the catalogue.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Inhouse Operations Software</span>
+                            <ul>
+                                <li>A MERN web software to manage operations, track headsets, see analytics, content etc...
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Cabin Crew Handset Devices</span>
+                            <ul>
+                                <li>A React Native Mobile app for cabin crew controlling the VR headsets, sending notifications, etc..
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Virtual Reality System</span>
+                            <ul>
+                                <li>A Unity Virtual Reality client hosting diverse content and applications.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="two-col">
+                        <div class="flex-column">
+                            <h3>The Challenge</h3>
+                            <p>Novel technology brings an oportunity to learn. On one side 2017 there were still a lot of the questions reagarding XR interfaces. How would the user operate the platform without bringing additional hardware to the aircraft?
+                                How could we develop a system where an average of 2k for each eye could be streamed to everyheadset? How could I handle all the restrictions and emergency procedures within virtual reality? How could we minimize the motion
+                                sickness? How could the software explain to the user the interface when they never put a headset on? I had endless challenges to sort out, every week. </p>
+                        </div>
+                        <div class="flex-column">
 
-          <img src="./images/VR_images/IFVR_Proto.png" alt="">
+                            <h3>The Process</h3>
+                            <p>The more demanding structure and user interface in this project was the virtual reality user interface. To comprehend how this system could be easily understood by users I had to put all our assumptions into a dummy prototype
+                                with fake media. After testing and iterations I managed to find a sweet spot between functionality, ergonomics, usability and aesthetics. This prototype became the sandbox environment of many ideas and premises to be tested
+                                and the proof of concept for production development.</p>
+                        </div>
+                    </div>
 
-         <h3>Validation</h3>
-          <p>Out of a prototype with heavy complex hardware, a project full of
-            uncertainties and a non standard user interface. We managed to conceive and optimise a great platform
-            to the most lightweight, affordable and frictionless product for non digital users.</p>
-          <h3>Learnings</h3>
-          <p>On this project I had the oportunity to learn how to design on premises without having a clear framework.
-            It was a great chance to apply all the knowledge I had acquired to solve issues without a previous defined
-            procedure.
-            Bringing a system where the users can satisfy their needs along an unusual environment, comming up with
-            novel interfaces
-            and new interactivity designs was a very enriching experience. </p>
-        </div>
+                    <img src="./images/VR_images/IFVR_Proto.png" alt="">
 
-        <img src="./images/VR_images/drafts_vr.png" alt="">
-        <video controls autoplay loop>
+                    <h3>Validation</h3>
+                    <p>Out of a prototype with heavy complex hardware, a project full of uncertainties and a non standard user interface. We managed to conceive and optimise a great platform to the most lightweight, affordable and frictionless product for
+                        non digital users.</p>
+                    <h3>Learnings</h3>
+                    <p>On this project I had the oportunity to learn how to design on premises without having a clear framework. It was a great chance to apply all the knowledge I had acquired to solve issues without a previous defined procedure. Bringing
+                        a system where the users can satisfy their needs along an unusual environment, comming up with novel interfaces and new interactivity designs was a very enriching experience. </p>
+                </div>
+
+                <img src="./images/VR_images/drafts_vr.png" alt="">
+                <video controls autoplay loop>
           <source src="./images/VR_images/IFVR_sneak_peek.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </section>
+            </section>
 
 
-      <section id="cca">
-        <h2>Cabin Crew Device</h2>
-        <hr>
-        <div class="project-info">
-          <p class="bold">Mobile app designed within the Inflight VR ecosystem to connect cabin crew members with immersed
-            passengers.</p>
-          <p></p>
-          <p>#interaction design</p>
-          <img src="./images/interaction_images/MockUp_CCA_2nd_CloseUp.png" alt="">
+            <section id="cca">
+                <h2>Cabin Crew Device</h2>
+                <hr>
+                <div class="project-info">
+                    <p class="bold">Mobile app designed within the Inflight VR ecosystem to connect cabin crew members with immersed passengers.
+                    </p>
+                    <p></p>
+                    <p>#interaction design</p>
+                    <img src="./images/interaction_images/MockUp_CCA_2nd_CloseUp.png" alt="">
 
-          <div class="project-info">
-            <img src="./images/interaction_images/Blueprint.png" alt="">
+                    <div class="project-info">
+                        <img src="./images/interaction_images/Blueprint.png" alt="">
 
-            <h3>The Target</h3>
-            <p>Cabin Crew Members with their necessities during flight. The application would serve as a monitor and
-              managing tool
-              of the headsets.</p>
-            <h3>The Scope</h3>
-            <p>A very simple, easy to use and quick operational application. Cabin crew members can pair their headset
-              via
-              QR code once the headset is delivered
-              to the passenger. Send notifications, set states and perform duty free sales.</p>
-            <h3>The Engine</h3>
-            <p>The app was designed in Adobe XD and developed in React Native. All the endpoints aimed to the platform
-              middleware.</p>
+                        <h3>The Target</h3>
+                        <p>Cabin Crew Members with their necessities during flight. The application would serve as a monitor and managing tool of the headsets.</p>
+                        <h3>The Scope</h3>
+                        <p>A very simple, easy to use and quick operational application. Cabin crew members can pair their headset via QR code once the headset is delivered to the passenger. Send notifications, set states and perform duty free sales.</p>
+                        <h3>The Engine</h3>
+                        <p>The app was designed in Adobe XD and developed in React Native. All the endpoints aimed to the platform middleware.
+                        </p>
 
-            <div class="two-col">
-              <video width="320" controls autoplay loop>
+                        <div class="two-col">
+                            <video width="320" controls autoplay loop>
                 <source src="./images/interaction_images/video_cca.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="flex-column">
-                <h3>The Challenge</h3>
-                <p>Understanding the necessities of the cabin crew members. Designing with operations manager a quick
-                  way
-                  to
-                  identify, pair, unpair and track the active headsets on the aircraft. It was also a challenge to
-                  design
-                  an
-                  interface with several dependent states related to security procedures within the aircraft. This
-                  application
-                  was developed in a month.</p>
-                <h3>The Process</h3>
-                <p>A first scribble and wireframe was introduced to the stakeholders so I used Adobe XD for rapid
-                  prototyping in order
-                  to test and agree on premises. This prototype was easy to handle to developers and founded a design
-                  system for further tools.
-                  After the first iteration, we could spend more time polishing interaction and functionality.</p>
-               <h3>Validation</h3>
-                <p>The application was deployed on android handsets and tested inflight. After early feedback the system
-                  was consolidated
-                  and integrated into production platform.</p>
-              </div>
+                            <div class="flex-column">
+                                <h3>The Challenge</h3>
+                                <p>Understanding the necessities of the cabin crew members. Designing with operations manager a quick way to identify, pair, unpair and track the active headsets on the aircraft. It was also a challenge to design an interface
+                                    with several dependent states related to security procedures within the aircraft. This application was developed in a month.</p>
+                                <h3>The Process</h3>
+                                <p>A first scribble and wireframe was introduced to the stakeholders so I used Adobe XD for rapid prototyping in order to test and agree on premises. This prototype was easy to handle to developers and founded a design system
+                                    for further tools. After the first iteration, we could spend more time polishing interaction and functionality.</p>
+                                <h3>Validation</h3>
+                                <p>The application was deployed on android handsets and tested inflight. After early feedback the system was consolidated and integrated into production platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Learnings</h3>
+                    <p>It was my first experience with Adobe XD. Having used Balsamiq for most of my previous projects, XD felt very compelling. The idea of having the quality design, vector based coexisting with the design system was super!</p>
+                    <div class="flex-column">
+                        <img src="./images/interaction_images/Artboard_cca.png" alt="">
+                    </div>
+                    <div class="flex-column">
+                        <img src="./images/interaction_images/MockUp_CCA_2nd_CloseUp.png" alt="">
+                    </div>
+            </section>
+            <hr>
             </div>
-          </div>
-          <h3>Learnings</h3>
-          <p>It was my first experience with Adobe XD. Having used Balsamiq for most of my previous projects, XD felt
-            very
-            compelling.
-            The idea of having the quality design, vector based coexisting with the design system was super!</p>
-          <div class="flex-column">
-            <img src="./images/interaction_images/Artboard_cca.png" alt="">
-          </div>
-          <div class="flex-column">
-            <img src="./images/interaction_images/MockUp_CCA_2nd_CloseUp.png" alt="">
-          </div>
-        </section>
-        <hr>
-    </div>
-    <script src="./scripts/load.js"></script>
-    <script src="scripts/injectMenu.js"></script>
-    <script src="./scripts/goto.js"></script>
+            <script src="./scripts/load.js"></script>
+            <script src="scripts/injectMenu.js"></script>
+            <script src="./scripts/goto.js"></script>
 
 </body>
 

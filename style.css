@@ -81,6 +81,7 @@ video>source {
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (2048 - 320)));
     /* text-align: center; */
     color: darkslategrey;
+    padding-left: 10px;
 }
 
 .contact-fila {
@@ -206,8 +207,7 @@ h2 {
 }
 
 h3 {
-       padding: 20px 20px 10px 0;
- 
+    padding: 20px 20px 10px 0;
 }
 
 .right {
