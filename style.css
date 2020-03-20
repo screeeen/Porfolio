@@ -38,7 +38,7 @@ body:empty {
 
 span {
     font-weight: bold;
-    padding: 20px 20px 10px 0;
+    /* padding: 20px 20px 10px 0; */
 }
 
 video {
@@ -172,11 +172,16 @@ a:active {
 }
 
 a::after {
-    /* display: inherit; */
     margin: 0 132px 0 0;
     font-family: 'Font Awesome 5 Free';
     font-weight: 100;
     /* content: ' ⤜'; */
+}
+
+.mylink::after {
+    /* font-family: 'Font Awesome 5 Free'; */
+    font-weight: 100;
+    content: '▷';
 }
 
 p {
@@ -198,6 +203,11 @@ h2 {
     text-align: left;
     /* z-index: -5; */
     vertical-align: 36px;
+}
+
+h3 {
+       padding: 20px 20px 10px 0;
+ 
 }
 
 .right {
@@ -327,9 +337,5 @@ textarea {
     }
     .menu-content {
         visibility: visible;
-    }
-    .bold {
-        font-weight: bold;
-        font-size: 16px;
     }
 }

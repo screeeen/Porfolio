@@ -28,16 +28,18 @@ document.body.querySelector('.container').innerHTML += `
       <info-section>
         <img src=${pictureURL} alt="">
         <br>
-        <p class="bold">My name is Miguel Álvarez. I'm an interaction designer and frontend developer.</p>
+        <p>How are you? I'm <span>Miguel</span>. I do <span>interaction design and frontend development</span>. I have experience in <span>game design and UX /UI</span> for games and applications.
+        
+        </p>
         <br>
 
 
         <div class="col">
-          <p><a href="https://www.linkedin.com/in/miguel-angel-alvarez-2ba1b2a/" target="_blank">LinkedIn</a></p>
-          <p><a href="http://screeeeen.com/" target="_blank">videogames </a></p>
-          <p><a href="https://github.com/screeeen" target="_blank">github</a></p>
-          <p><a href="https://www.dropbox.com/s/jl18d97acfb189l/000_Miguel_Angel_Alvarez_CV_.pdf?dl=0"
-              target="_blank">resume</a></p>
+          <p><a class="mylink" href="https://www.linkedin.com/in/miguel-angel-alvarez-2ba1b2a/" target="_blank">Linkedin Profile</a></p>
+          <p><a class="mylink" href="http://screeeeen.com/" target="_blank">Videogames </a></p>
+          <p><a  class="mylink" href="https://github.com/screeeen" target="_blank">Github</a></p>
+          <p><a  class="mylink" href="https://www.dropbox.com/s/jl18d97acfb189l/000_Miguel_Angel_Alvarez_CV_.pdf?dl=0"
+              target="_blank">Resume</a></p>
 
         </div>
       </info-section>
