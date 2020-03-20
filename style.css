@@ -80,7 +80,7 @@ video>source {
     /* font-size: 10px; */
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (2048 - 320)));
     /* text-align: center; */
-    color: lightblue;
+    color: darkslategrey;
 }
 
 .contact-fila {

@@ -59,14 +59,6 @@ document.body.querySelector('.container').innerHTML += `
         <h2 class="right">INFLIGHT VR</h2>
     </div>
 </a>
-<a href="javascript:window.location=goto('eh')">
-    <div class="fila">
-        <div class="marker">
-            <p>GAME DESIGN</p>
-        </div>
-        <h2 class="right">EMERGENCY HEROES</h2>
-    </div>
-</a>
 
 <a href="javascript:window.location=goto('Belote')">
     <div class="fila">
@@ -74,6 +66,15 @@ document.body.querySelector('.container').innerHTML += `
             <p>UX DESIGN</p>
         </div>
         <h2 class="right">BELOTE</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('eh')">
+    <div class="fila">
+        <div class="marker">
+            <p>GAME DESIGN</p>
+        </div>
+        <h2 class="right">EMERGENCY HEROES</h2>
     </div>
 </a>
 
