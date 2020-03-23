@@ -108,13 +108,77 @@ document.body.querySelector('.container').innerHTML += `
     </div>
     </div>
   </div>
+
+  <div class="bottom-links">
+      <hr>
+      <div class=" contact-fila" style="background-color:transparent">
+      <a href="mailto:miguel@screenimplosion.com?Subject=Hi!" target="_top">
+              <h2>GET IN TOUCH</h2>
+      </a>
+    </div>
+    
+    <a href="javascript:window.location=goto('inflight-vr')">
+    <div class="fila">
+        <div class="marker">
+            <p>PRODUCT DESIGN</p>
+        </div>
+        <h2 class="right">INFLIGHT VR</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('Belote')">
+    <div class="fila">
+        <div class="marker">
+            <p>UX DESIGN</p>
+        </div>
+        <h2 class="right">BELOTE</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('eh')">
+    <div class="fila">
+        <div class="marker">
+            <p>GAME DESIGN</p>
+        </div>
+        <h2 class="right">EMERGENCY HEROES</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('indie-games')">
+    <div class="fila">
+        <div class="marker">
+            <p>GAME DESIGN</p>
+        </div>
+        <h2 class="right">INDIE GAMES</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('Ilustration')">
+    <div class="fila">
+        <div class="marker">
+            <p>CREATIVE</p>
+        </div>
+        <h2 class="right">ANIMATIONS</h2>
+    </div>
+</a>
+
+<a href="javascript:window.location=goto('lectures')">
+    <div class="fila">
+        <div class="marker">
+            <p>LECTURES</p>
+        </div>
+        <h2 class="right">TALKS</h2>
+    </div>
+</a>
+    </div>
+    </div>
 `;
 
 if ((page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html')|| (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
-    document.querySelector(".c2").removeAttribute("hidden")
+    document.querySelector(".c2").removeAttribute("hidden") //remove about on
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
-  document.querySelector(".c2").setAttribute("hidden","")
+  document.querySelector(".c2").setAttribute("hidden","") // show about
 
 }
