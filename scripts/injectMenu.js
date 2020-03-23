@@ -43,7 +43,6 @@ document.body.querySelector('.container').innerHTML += `
 
         </div>
       </info-section>
-
       <div class="bottom-links">
       <hr>
       <div class=" contact-fila" style="background-color:transparent">
@@ -176,9 +175,14 @@ document.body.querySelector('.container').innerHTML += `
 
 if ((page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html')|| (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
+<<<<<<< HEAD
     document.querySelector(".c2").removeAttribute("hidden") //remove about on
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden")
   document.querySelector(".c2").setAttribute("hidden","") // show about
 
+=======
+} else {
+  document.querySelector(".bottom-links").removeAttribute("hidden")
+>>>>>>> parent of 3844a26... test remove menu on projects
 }

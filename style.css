@@ -310,7 +310,10 @@ textarea {
         -webkit-order: 3;
         order: 3;
         height: 100%;
+<<<<<<< HEAD
         margin: 0 auto;
+=======
+>>>>>>> parent of 3844a26... test remove menu on projects
     }
     .c2 {
         width: 30%;
