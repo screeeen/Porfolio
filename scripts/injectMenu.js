@@ -23,8 +23,8 @@ document.body.querySelector('.container').innerHTML += `
 <h1 class="title">${showButton()}</h1>
 </a>  
 </div>
-<div class="c2">
 
+<div class="c2">
       <info-section>
         <img src=${pictureURL} alt="">
         <br>
@@ -45,7 +45,7 @@ document.body.querySelector('.container').innerHTML += `
       </info-section>
       <div class="bottom-links">
       <hr>
-      <div class="fila contact-fila" style="background-color:transparent">
+      <div class=" contact-fila" style="background-color:transparent">
       <a href="mailto:miguel@screenimplosion.com?Subject=Hi!" target="_top">
               <h2>GET IN TOUCH</h2>
       </a>
