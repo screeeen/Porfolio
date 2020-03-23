@@ -308,6 +308,7 @@ textarea {
         -webkit-order: 3;
         order: 3;
         height: 100%;
+        margin: auto;
     }
     .c2 {
         width: 30%;
