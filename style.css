@@ -12,11 +12,42 @@
     font-kerning: none;
     letter-spacing: 1.2px;
     line-height: 1.2em;
+    text-rendering: geometricPrecision;
 }
 
-body:empty {
+.title {
+    font-size: 2.5em !important;
+    line-height: 1.2em !important;
+    padding-bottom: 2px;
+    font-weight: bolder !important;
+    font-kerning: none !important;
+    letter-spacing: 2px !important;
+    top: 0;
+    left: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.title-boss {
+    font-size: 12.5em !important;
+    line-height: 1.2em !important;
+    padding-bottom: 2px;
+    font-weight: bolder !important;
+    font-kerning: none !important;
+    letter-spacing: 2px !important;
+}
+
+#loader {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
+    text-align: center;
+}
+
+#loader>h1 {
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }
 
 @keyframes gradient {
@@ -133,20 +164,6 @@ section {
 
 info-section {
     padding: 6px 0;
-}
-
-.title {
-    font-size: 2.5em !important;
-    line-height: 1.2em !important;
-    padding-bottom: 2px;
-    font-weight: bolder !important;
-    font-kerning: none !important;
-    letter-spacing: 2px !important;
-    top: 0;
-    left: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: geometricPrecision;
 }
 
 .lesskerning {

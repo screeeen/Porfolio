@@ -3,7 +3,7 @@ const pictureURL = '/Porfolio/images/Miguel_Alva_small.jpg';
 
 
 showButton = () => {
-  const hello = "HELLO";
+  const hello = "HOW ARE YOU TODAY?";
   const back = " ‹ BACK"
   let text = ''
 
@@ -14,8 +14,6 @@ showButton = () => {
   }
   return text;
 }
-
-
 
 document.body.querySelector('.container').innerHTML += `
 <div class='c3'>
