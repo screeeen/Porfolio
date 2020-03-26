@@ -28,15 +28,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.title-boss {
-    font-size: 12.5em !important;
-    line-height: 1.2em !important;
-    padding-bottom: 2px;
-    font-weight: bolder !important;
-    font-kerning: none !important;
-    letter-spacing: 2px !important;
-}
-
 #loader {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
