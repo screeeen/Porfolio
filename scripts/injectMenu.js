@@ -1,19 +1,23 @@
 const page = window.location.href;
-const pictureURL = '/Porfolio/images/Miguel_Alva_small.jpg';
+const pictureURL = '/images/Miguel_Alva_small.jpg' || '/Portfolio/images/Miguel_Alva_small.jpg';
 
-
+console.log('page', window.location);
 showButton = () => {
-  const hello = "HELLO";
-  const back = " ‹ BACK"
-  let text = ''
+	const hello = 'HELLO';
+	const back = ' ‹ BACK';
+	let text = '';
 
-  if ((page === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/index.html') || (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
-    text = hello;
-  } else {
-    text = back;
-  }
-  return text;
-}
+	if (
+		page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html' ||
+		window.location.href ===
+			window.location.protocol + '//' + window.location.hostname + '/Porfolio/'
+	) {
+		text = hello;
+	} else {
+		text = back;
+	}
+	return text;
+};
 
 document.body.querySelector('.container').innerHTML += `
 <div class='c3'>
@@ -49,6 +53,15 @@ document.body.querySelector('.container').innerHTML += `
               <h2>GET IN TOUCH</h2>
       </a>
     </div>
+
+    <a href="javascript:window.location=goto('Programming')">
+    <div class="fila">
+        <div class="marker">
+            <p>CODE</p>
+        </div>
+        <h2 class="right">MEDICAL VIEWER</h2>
+    </div>
+</a>
     
     <a href="javascript:window.location=goto('inflight-vr')">
     <div class="fila">
@@ -109,11 +122,13 @@ document.body.querySelector('.container').innerHTML += `
   
 `;
 
-if ((page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html')|| (window.location.href === window.location.protocol  + '//' + window.location.hostname + '/Porfolio/')) {
-  document.querySelector(".bottom-links").setAttribute("hidden", "");
-    document.querySelector(".c2").removeAttribute("hidden") //remove about on
+if (
+	page === window.location.protocol + '//' + window.location.hostname + '/Porfolio/index.html' ||
+	window.location.href === window.location.protocol + '//' + window.location.hostname + '/Porfolio/'
+) {
+	// document.querySelector('.bottom-links').setAttribute('hidden', '');
+	// document.querySelector('.c2').removeAttribute('hidden'); //remove about on
 } else {
-  document.querySelector(".bottom-links").removeAttribute("hidden")
-  document.querySelector(".c2").setAttribute("hidden","") // show about
-
+	// document.querySelector('.bottom-links').removeAttribute('hidden');
+	// document.querySelector('.c2').setAttribute('hidden', ''); // show about
 }
