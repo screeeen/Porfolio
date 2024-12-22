@@ -143,11 +143,11 @@ video > source {
   object-fit: contain;
   box-sizing: border-box;
   padding: 5px;
+  background-color: transparent;
 }
 
 .c3 {
   text-shadow: 0px px white;
-  background-color: white;
 }
 
 section {
