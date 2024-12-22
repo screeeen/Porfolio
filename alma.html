@@ -1,120 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inflight-VR</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link href="./reset.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./reset.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body onload="js_Load()">
-    <div id='loader'>
-        <h1 class='title'></h1>
+  <body onload="js_Load()">
+    <div id="loader">
+      <h1 class="title"></h1>
     </div>
     <div id="main" class="container">
-        <div class="c1">
-            <section id="alma">
-                <h2>ALMA MEDICAL</h2>
-                <hr>
+      <div class="c1">
+        <section id="alma">
+          <h2>ALMA MEDICAL</h2>
+          <hr />
 
-                <div class="project-info">
-                    <p><a href src='https://alma-medical.com/en/workstation/alma-2d-viewer/'>inflight-vr.com</a></p>
-                    <p>#Frontend Development</p>
-                </div>
-                <div class="project-info">
-                    <p class="bold">Coding a medical DICOM viewer. Made at Alma Medical SL.</p>
-                    <img src="./images/medical_images/mclinic-integrable.jpeg" alt="">
-                    <img src="./images/medical_images/mclinic-multimodalidad.jpeg" alt="">
-                    <h3>The Target</h3>
-                    <p>Alma 2D Viewer is a portable, device-agnostic medical imaging application that offers healthcare professionals advanced tools for visualizing and analyzing radiological studies. It ensures a secure, non-traceable environment for handling medical images.
-                    </p>
+          <div class="project-info">
+            <p>
+              <a
+                href
+                src="https://alma-medical.com/en/workstation/alma-2d-viewer/"
+                >alma-medical.com</a
+              >
+            </p>
+            <p>#Frontend Development</p>
+          </div>
+          <div class="project-info">
+            <p class="bold">
+              Coding a medical DICOM viewer. Made at Alma Medical SL.
+            </p>
+            <img
+              src="./images/medical_images/mclinic-multimodalidad.jpeg"
+              alt=""
+            />
+            <h3>The Target</h3>
+            <p>
+              Alma 2D Viewer is a portable, device-agnostic medical imaging
+              application that offers healthcare professionals advanced tools
+              for visualizing and analyzing radiological studies. It ensures a
+              secure, non-traceable environment for handling medical images.
+            </p>
 
-                    <h3>The Scope</h3>
-                    <p>Alma 2D Viewer is part of Alma Medical's proprietary ecosystem of radiology imaging solutions.
+            <h3>The Scope</h3>
+            <p>
+              Alma 2D Viewer is part of Alma Medical's proprietary ecosystem of
+              radiology imaging solutions. My role centered on developing the
+              frontend interface, enabling an effective visualisation,
+              interaction and communication with diverse PACS (Picture Archiving
+              and Communication Systems).
+            </p>
+            <h3>The Engine</h3>
+            <p>
+              The platform employs a robust web technology stack: React on the
+              client side, integrating open source OHIF (Open Health Imaging
+              Foundation) viewer modules to support DICOMWeb standards (WADO-RS,
+              QIDO-RS, STOW-RS) and traditional DICOM formats using
+              cornerstone.js, adapting dicom-parser and custom-built code
+              tailored to client needs. Key Contributions:
+            </p>
+            <ul>
+              <li>
+                <span>Custom Image Viewer Interface</span>
+                <ul>
+                  <li>
+                    Designed and adapted a dynamic, responsive 2D viewer
+                    tailored to client-specific requirements.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Tool Customization</span>
+                <ul>
+                  <li>
+                    Enhanced OHIF and proprietary tools to optimize workflows,
+                    including viewport synchronization, visualization options
+                    for multi-image studies, segmentation, and MPR palettes.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>3D Software Integration</span>
+                <ul>
+                  <li>
+                    Integrated proprietary 3D software, enabling Multi-Plane
+                    Reconstruction (MPR) and volumetric views.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Backend Integration</span>
+                <ul>
+                  <li>
+                    Implemented seamless communication between frontend and
+                    backend to fetch, process, and render high-resolution
+                    medical images in real-time.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Compliance and Accessibility</span>
+                <ul>
+                  <li>
+                    Ensured adherence to medical data privacy regulations and
+                    incorporated accessibility features to accommodate diverse
+                    user needs.
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-                        My role centered on developing the frontend interface, enabling an effective interaction between healthcare professionals and diverse PACS (Picture Archiving and Communication Systems).
-                    </p>
-                    <h3>The Engine</h3>
-                    <p>The platform employs a robust web technology stack:
-                        React on the client side, integrating an OHIF viewer to support DICOMWeb standards (WADO-RS, QIDO-RS, STOW-RS) and traditional DICOM formats using cornerstone.js, adapting dicom-parser and custom-built code tailored to client needs.
-                        Key Contributions:
-                    </p>
-                    <ul>
-                        <li><span>Custom Image Viewer Interface</span>
-                            <ul>
-                                <li>Designed and adapted a dynamic, responsive 2D viewer tailored to client-specific requirements.
-                                </li>
-                            </ul>
-                        </li>
-                        <li><span>Tool Customization</span>
-                            <ul>
-                                <li>Enhanced OHIF and proprietary tools to optimize workflows, including viewport synchronization, visualization options for multi-image studies, segmentation, and MPR palettes.
-                                </li>
-                            </ul>
-                        </li>
-                        <li><span>3D Software Integration</span>
-                            <ul>
-                                <li>Integrated proprietary 3D software, enabling Multi-Plane Reconstruction (MPR) and volumetric views.
-                                </li>
-                            </ul>
-                        </li>
-                        <li><span>Backend Integration</span>
-                            <ul>
-                                <li>Implemented seamless communication between frontend and backend to fetch, process, and render high-resolution medical images in real-time.
-                                </li>
-                            </ul>
-                        </li>
-                        <li><span>Compliance and Accessibility</span>
-                            <ul>
-                                <li>Ensured adherence to medical data privacy regulations and incorporated accessibility features to accommodate diverse user needs.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                        
-                            <h3>The Challenge</h3>
-                            <p>Adapting the OHIF viewer to meet diverse client requirements posed significant challenges, particularly in tailoring workflows to specific use cases. This involved extending and modifying existing tools, implementing custom features such as synched viewports, multi-image visualizations, and advanced segmentation.
+            <img src="./images/medical_images/medical_multiview.png" alt="" />
 
-                                Integrating proprietary 3D software for Multi-Plane Reconstruction (MPR) and volume views required attention to detail to ensure interoperability with the 2D viewer and backend systems.
-                                
-                                Another critical challenge was gaining a deep understanding of the DICOM standard, including parsing its extensive metadata and handling the nuances of medical imaging protocols. Balancing performance, compliance with medical data regulations, and accessibility added further complexity to the project.</p>
-                        
-                        
+            <h3>The Challenge</h3>
+            <p>
+              Adapting the OHIF viewer to meet diverse client requirements posed
+              significant challenges, particularly in tailoring workflows to
+              specific use cases. This involved extending and modifying existing
+              tools, implementing custom features such as synched viewports,
+              multi-image visualizations or ECG (Electro Cardio Graph).
+              Integrating proprietary 3D software for MPR (Multi-Plane
+              Reconstruction) and volumetric views required attention to detail
+              to ensure interoperability with the 2D viewer and backend systems.
+              Another challenges were gaining a deep understanding of the DICOM
+              standard, including parsing its extensive metadata and handling
+              the nuances of medical imaging protocols. Balancing performance,
+              compliance with medical data regulations, and accessibility added
+              further complexity to the project.
+            </p>
 
-                            <h3>The Process</h3>
-                            <p>The development involved iterative prototyping and close collaboration with stakeholders, including radiologists and UX designers, to refine workflows and ensure an intuitive user experience.</p>
-                        
-                    
+            <h3>The Process</h3>
+            <p>
+              The development involved iterative prototyping and close
+              collaboration with stakeholders, including radiologists and UX
+              designers, to refine workflows and ensure an intuitive user
+              experience.
+            </p>
+            <img src="./images/medical_images/medical_ecg.png" alt="" />
 
-                    <img src="./images/medical_images/mclinic-integrable.jpeg" alt="">
+            <h3>Validation</h3>
+            <p>
+              Deployed across various clinics and widely used by radiologists,
+              Alma 2D Viewer became a cornerstone product in the company’s
+              portfolio. It delivers a portable, non-traceable solution for
+              rapid diagnostics, supporting a range of devices including
+              desktops, tablets, and smartphones.
+            </p>
+            <img src="./images/medical_images/medical_volume.png" alt="" />
+            <h3>Learnings</h3>
+            <p>
+              This project allowed me to deepen my expertise in frontend
+              development for high-stakes environments. I gained experience in
+              optimizing complex visual rendering pipelines, designing
+              interfaces that align with user needs, and ensuring compliance
+              with industry regulations. It was an enriching opportunity to
+              contribute to a product that directly impacts patient care and
+              medical outcomes.
+            </p>
+          </div>
 
-                    <h3>Validation</h3>
-                    <p>Deployed across various clinics and widely used by radiologists, Alma 2D Viewer became a cornerstone product in the company’s portfolio. It delivers a portable, non-traceable solution for rapid diagnostics, supporting a range of devices including desktops, tablets, and smartphones.</p>
-                    <h3>Learnings</h3>
-                    <p>This project allowed me to deepen my expertise in frontend development for high-stakes environments. I gained experience in optimizing complex visual rendering pipelines, designing interfaces that align with user needs, and ensuring compliance with industry regulations. It was an enriching opportunity to contribute to a product that directly impacts patient care and medical outcomes. </p>
-                </div>
-
-                <img src="./images/medical_images/mclinic-multimodalidad.jpeg" alt="">
-                <video controls autoplay loop>
-          <source src="./images/VR_images/IFVR_sneak_peek.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-            </section>
-            <hr>
-            </div>
-            <script src="./scripts/load.js"></script>
-            <script src="scripts/injectMenu.js"></script>
-            <script src="./scripts/goto.js"></script>
-
-</body>
-
+          <video controls autoplay loop>
+            <source
+              src="./images/medical_images/medical_videoclip.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+        <hr />
+      </div>
+    </div>
+    <script src="./scripts/load.js"></script>
+    <script src="scripts/injectMenu.js"></script>
+    <script src="./scripts/goto.js"></script>
+  </body>
 </html>
