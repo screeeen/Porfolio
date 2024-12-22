@@ -33,7 +33,7 @@ document.body.querySelector(".container").innerHTML += `
       <info-section>
         <img src=${pictureURL} alt="">
         <br>
-        <p>How are you? I'm <span>Miguel</span>. I do <span>interaction design and frontend development</span>. I have experience in <span>game design and UX /UI</span>.
+        <p>How are you? I'm <span>Miguel</span>, and I specialize in <span>frontend development</span>, with a passion for <span>interaction design</span>. I also have experience in <span>UX/UI design and video games design</span>.
         
         </p>
         <br>
