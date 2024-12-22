@@ -56,7 +56,7 @@ document.body.querySelector(".container").innerHTML += `
       </a>
     </div>
 
-    <a href="javascript:window.location=goto('Programming')">
+    <a href="javascript:window.location=goto('medical')">
     <div class="fila">
         <div class="marker">
             <p>CODE</p>
