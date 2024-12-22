@@ -1,5 +1,6 @@
 const page = window.location.href;
 const pictureURL = "/Portfolio/images/Miguel_Alva_small.jpg";
+console.log(pictureURL);
 
 console.log("page", window.location);
 showButton = () => {
