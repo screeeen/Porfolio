@@ -43,7 +43,7 @@ document.body.querySelector(".container").innerHTML += `
           <p><a class="mylink" href="https://www.linkedin.com/in/miguel-angel-alvarez-2ba1b2a/" target="_blank">Linkedin Profile</a></p>
           <p><a class="mylink" href="http://screeeeen.com/" target="_blank">Videogames </a></p>
           <p><a  class="mylink" href="https://github.com/screeeen" target="_blank">Github</a></p>
-          <p><a  class="mylink" href="Porfolio/images/Resume Miguel Angel Alvarez.pdf?dl=0"
+          <p><a  class="mylink" href="Porfolio/images/resume.pdf"
               target="_blank">Resume</a></p>
         </div>
       </info-section>
