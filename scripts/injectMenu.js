@@ -121,24 +121,22 @@ document.body.querySelector(".container").innerHTML += `
         <h2 class="right">TALKS</h2>
     </div>
 </a>
-    </div>
-    </div>
-  </div>
-  
+    </div> 
 `;
 
-if (
-  page ===
-    window.location.protocol +
-      "//" +
-      window.location.hostname +
-      "/Porfolio/index.html" ||
-  window.location.href ===
-    window.location.protocol + "//" + window.location.hostname + "/Porfolio/"
-) {
-  // document.querySelector('.bottom-links').setAttribute('hidden', '');
+const urlIndex =
+  window.location.protocol +
+  "//" +
+  window.location.hostname +
+  "/Porfolio/index.html";
+
+const urlPorfolio =
+  window.location.protocol + "//" + window.location.hostname + "/Porfolio/";
+
+if (page === urlIndex || window.location.href === urlPorfolio) {
+  document.querySelector(".bottom-links").setAttribute("hidden", "");
   // document.querySelector('.c2').removeAttribute('hidden'); //remove about on
 } else {
-  // document.querySelector('.bottom-links').removeAttribute('hidden');
+  document.querySelector(".bottom-links").removeAttribute("hidden");
   // document.querySelector('.c2').setAttribute('hidden', ''); // show about
 }
