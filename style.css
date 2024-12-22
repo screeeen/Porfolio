@@ -185,6 +185,7 @@ a {
   /* display: inline-block; */
   color: darkslategrey;
   outline: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -192,7 +193,17 @@ a:hover {
 }
 
 a:active {
-  color: grey;
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+a:focus {
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 a::after {
