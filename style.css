@@ -308,18 +308,12 @@ textarea {
 @media (max-width: 600px) {
   .c1 {
     order: 2;
-    height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: none;
   }
   .c2 {
     order: 3;
   }
   .c3 {
     order: 1;
-    height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: none;
   }
   .menu-content {
     visibility: hidden;
@@ -332,7 +326,9 @@ textarea {
     width: 70%;
     -webkit-order: 3;
     order: 3;
-    height: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
     margin: 0 auto;
   }
   .c2 {
@@ -350,9 +346,9 @@ textarea {
     width: 100%;
     -webkit-order: 1;
     order: 1;
-    height: 100%;
-    position: sticky;
-    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
   }
   .half-size {
     width: 50%;
