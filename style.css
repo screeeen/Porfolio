@@ -335,9 +335,9 @@ textarea {
     width: 30%;
     -webkit-order: 2;
     order: 2;
-    height: 100%;
-    position: sticky;
-    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
   }
   .c3 {
     /* border: 1px solid red; */
@@ -346,9 +346,9 @@ textarea {
     width: 100%;
     -webkit-order: 1;
     order: 1;
-    height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: none;
+    height: 100%;
+    position: sticky;
+    top: 0;
   }
   .half-size {
     width: 50%;
