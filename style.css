@@ -308,15 +308,18 @@ textarea {
 @media (max-width: 600px) {
   .c1 {
     order: 2;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
   }
   .c2 {
     order: 3;
   }
   .c3 {
     order: 1;
-    /* border:1px solid blue; */
-    position: sticky;
-    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
   }
   .menu-content {
     visibility: hidden;
