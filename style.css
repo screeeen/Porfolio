@@ -330,6 +330,8 @@ textarea {
     overflow-y: auto;
     scrollbar-width: none;
     margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
   }
   .c2 {
     width: 30%;

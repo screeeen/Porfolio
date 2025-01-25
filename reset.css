@@ -90,6 +90,31 @@ video {
   vertical-align: baseline;
 }
 
+body {
+  /* Para navegadores basados en Webkit (Chrome, Edge, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Fondo de la barra */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Color del control del scroll (con transparencia) */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7); /* Color del control al pasar el mouse */
+  }
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
   outline: 0;
