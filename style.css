@@ -312,6 +312,9 @@ textarea {
   .c3 {
     order: 1;
   }
+  .bottom-links {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
