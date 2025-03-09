@@ -304,14 +304,12 @@ textarea {
 }
 
 @media (min-width: 600px) {
-  .container {
-    display: none;
-  }
   .c1 {
     order: 2;
   }
   .c2 {
     order: 3;
+    display: none;
   }
   .c3 {
     order: 1;
