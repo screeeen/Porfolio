@@ -311,6 +311,9 @@ textarea {
   } */
   .c3 {
     order: 1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 }
 
@@ -337,13 +340,11 @@ textarea {
   .c3 {
     /* border: 1px solid red; */
     display: block;
-    z-index: 10;
+
     width: 100%;
     -webkit-order: 1;
     order: 1;
     height: 100%;
-    position: sticky;
-    top: 0;
   }
   .half-size {
     width: 50%;

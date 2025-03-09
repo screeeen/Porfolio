@@ -139,5 +139,9 @@ if (
   document.querySelector(".c2").style.order = "2";
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden");
-  document.querySelector(".c2").style.order = "3";
+  if (window.matchMedia("(min-width: 600px)").matches) {
+    document.querySelector(".c2").style.order = "3";
+  } else {
+    document.querySelector(".c2").style.order = "2";
+  }
 }
