@@ -304,16 +304,13 @@ textarea {
 
 @media (max-width: 600px) {
   .c1 {
-    order: 2;
+    order: 3;
   }
   .c2 {
-    order: 3;
+    order: 2;
   }
   .c3 {
     order: 1;
-  }
-  .bottom-links {
-    display: none;
   }
 }
 
