@@ -140,8 +140,10 @@ if (
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden");
   if (window.matchMedia("(min-width: 600px)").matches) {
-    document.querySelector(".c2").style.order = "2";
-  } else {
     document.querySelector(".c2").style.order = "3";
+    document.querySelector(".c2").style.border = "2px solid blue";
+  } else {
+    document.querySelector(".c2").style.order = "2";
+    document.querySelector(".c2").style.border = "2px solid red";
   }
 }
