@@ -305,8 +305,7 @@ textarea {
 
 @media (min-width: 600px) {
   .container {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+    display: none;
   }
   .c1 {
     order: 2;
