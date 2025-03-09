@@ -60,7 +60,6 @@
 
 span {
   font-weight: bold;
-  /* padding: 20px 20px 10px 0; */
 }
 
 video {
@@ -98,14 +97,10 @@ video > source {
   padding: 4px;
   width: 80%;
   color: white;
-  /* transform-origin: center;
-      transform: rotateZ(90deg); */
 }
 
 .marker > p {
-  /* font-size: 10px; */
   font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (2048 - 320)));
-  /* text-align: center; */
   color: darkslategrey;
   padding-left: 10px;
 }
@@ -179,8 +174,6 @@ img {
 
 a {
   text-decoration: none;
-  /* padding: 2px; */
-  /* display: inline-block; */
   color: darkslategrey;
   outline: 0;
   -webkit-tap-highlight-color: transparent;
@@ -208,11 +201,9 @@ a::after {
   margin: 0 132px 0 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 100;
-  /* content: ' ⤜'; */
 }
 
 .mylink::after {
-  /* font-family: 'Font Awesome 5 Free'; */
   font-weight: 100;
   content: "▷";
 }
@@ -230,11 +221,9 @@ li {
 }
 
 h2 {
-  /* font-weight: bold; */
   font-size: 22px;
   padding: 10px 0 0 0px;
   text-align: left;
-  /* z-index: -5; */
   vertical-align: 36px;
 }
 
@@ -252,7 +241,6 @@ hr {
   margin: 12px 0;
   color: black;
   background-color: black;
-  /* Modern Browsers */
 }
 
 .project-info {
@@ -302,7 +290,7 @@ input[type="submit"] {
 textarea {
   width: 100%;
 }
-
+/* 
 @media (min-width: 600px) {
   .c1 {
     order: 2;
@@ -341,7 +329,6 @@ textarea {
     scrollbar-width: none;
   }
   .c3 {
-    /* border: 1px solid red; */
     display: block;
     z-index: 10;
     width: 100%;
@@ -375,4 +362,4 @@ textarea {
   .menu-content {
     visibility: visible;
   }
-}
+} */
