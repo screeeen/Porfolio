@@ -132,6 +132,8 @@ const urlPorfolio =
 
 if (page === urlIndex || window.location.href === urlPorfolio) {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
+  document.querySelector(".c2").style.order = "2";
 } else {
   document.querySelector(".bottom-links").removeAttribute("hidden");
+  document.querySelector(".c2").style.order = "3";
 }
