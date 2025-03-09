@@ -130,7 +130,11 @@ const urlIndex =
 const urlPorfolio =
   window.location.protocol + "//" + window.location.hostname + "/Porfolio/";
 
-if (page === urlIndex || window.location.href === urlPorfolio) {
+if (
+  page === "http://127.0.0.1:5501/index.html" ||
+  page === urlIndex ||
+  window.location.href === urlPorfolio
+) {
   document.querySelector(".bottom-links").setAttribute("hidden", "");
   document.querySelector(".c2").style.order = "2";
 } else {

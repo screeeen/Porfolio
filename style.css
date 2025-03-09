@@ -306,9 +306,9 @@ textarea {
   .c1 {
     order: 3;
   }
-  .c2 {
+  /* .c2 {
     order: 2;
-  }
+  } */
   .c3 {
     order: 1;
   }
@@ -328,8 +328,8 @@ textarea {
   }
   .c2 {
     width: 30%;
-    -webkit-order: 2;
-    order: 2;
+    /* -webkit-order: 2; */
+    /* order: 2; */
     height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
