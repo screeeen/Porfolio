@@ -60,7 +60,6 @@
 
 span {
   font-weight: bold;
-  /* padding: 20px 20px 10px 0; */
 }
 
 video {
@@ -313,10 +312,6 @@ textarea {
   .c3 {
     order: 1;
   }
-  .menu-content {
-    visibility: hidden;
-    display: none;
-  }
 }
 
 @media (min-width: 600px) {
@@ -370,8 +365,5 @@ textarea {
   }
   .flex-column > p {
     padding: 0 24px 0 0;
-  }
-  .menu-content {
-    visibility: visible;
   }
 }
